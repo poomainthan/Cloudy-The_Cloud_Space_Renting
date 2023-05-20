@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="cloudy.master.cs" Inherits="WebApplication_master_testing.cloudy" %>
+
+<!DOCTYPE aspx>
+
+<aspx>
+<head runat="server">
+    <title></title>
+
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/flexslider.css" rel="stylesheet" />
+    <link href="css/popup.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/jquery.wmuSlider.js"></script>
+    <script src="js/nav.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                </asp:ContentPlaceHolder>
+        </div>
+ 
+        <asp:ContentPlaceHolder ID="footer" runat="server">
+            <div class="footer">
+        <div class="container">
+            <div class="col-md-3 box_1">
+                <img src="images/cloudysp.png" alt="" / width="50" height="50"><p>CLOUDY SPACE</p>
+            </div>
+            <div class="col-md-3 box_2">
+                <h4>Quick Links</h4>
+                <ul class="list_2">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Plans</a></li>
+                    <li><a href="#">Domains</a></li>
+                </ul>
+                <ul class="list_2">
+                    <li><a href="#">Faq</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="col-md-3 box_2">
+                <h4>Contact Us</h4>
+                <address class="address">
+                    <dl>
+                        <dt></dt>
+                        <dd>Address : <span>Kannampalayam</span></dd>
+                        <dd>E-mail : <a href="mailto@cloudyspace">info(at)cloudyspace.com</a></dd>
+                        <dd>Call : <span> +91 9345001254</span></dd>
+                    </dl>
+                </address>
+            </div>
+            <div class="col-md-3 box_2">
+                <h4>Social Media</h4>
+                <ul class="footer_social">
+                    <li><a href=""> <i class="fb"> </i> </a></li>
+                    <li><a href=""><i class="tw"> </i> </a></li>
+                    <li><a href=""><i class="linkedin"> </i> </a></li>
+                    <li><a href=""><i class="google"> </i> </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+        </asp:ContentPlaceHolder>
+
