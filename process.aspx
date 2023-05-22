@@ -69,7 +69,7 @@
 
                 <p><center>----------------------</center> </p>
 
-                <a class="popup-with-zoom-anim process-btn" href="#small-dialog">Process order</a>
+                <a class="popup-with-zoom-anim process-btn" href="details.aspx">Process order</a>
             </div>
             <div id="small-dialog" class="mfp-hide">
                 <div class="pop_up">
@@ -134,7 +134,7 @@
                 <p><center>----------------------</center> </p>
                 
 
-                <a class="popup-with-zoom-anim process2-btn" href="#small-dialog">Process order</a>
+                <a class="popup-with-zoom-anim process2-btn" href="details.aspx">Process order</a>
             </div>
         <div id="small-dialog" class="mfp-hide">
             <div class="pop_up">
@@ -197,7 +197,7 @@
 
                 <p><center>----------------------</center> </p>
 
-                <a class="popup-with-zoom-anim process3-btn" href="#small-dialog">Process order</a>
+                <a class="popup-with-zoom-anim process3-btn" href="details.aspx">Process order</a>
             </div>
         <div id="small-dialog" class="mfp-hide">
             <div class="pop_up">
@@ -259,7 +259,7 @@
 
 
                 <p><center>----------------------</center> </p>
-                <a class="popup-with-zoom-anim process4-btn" href="#small-dialog">Process order</a>
+                <a class="popup-with-zoom-anim process4-btn" href="details.aspx">Process order</a>
             </div>
         <div id="small-dialog" class="mfp-hide">
             <div class="pop_up">
