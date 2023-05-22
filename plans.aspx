@@ -84,7 +84,7 @@
             </h4>
         	<div class="col-md-3 thumb_2">
 							<div class="pricing-table-grid plan_box">
-								<h3><span class="rupees">₹</span>600<br><span class="month">Per Month</span></h3>
+								<h3><span class="rupees">₹</span>600<br><span class="month"></span></h3>
 								<ul>
 									<li><span>Standard Plan</span></li>
 									<li><a href="#">10GB Disk Space</a></li>
@@ -126,7 +126,7 @@
 		     </div>
 			 <div class="col-md-3 thumb_2">
 				 <div class="pricing-table-grid plan_box">
-					 <h3><span class="rupees">₹</span>700<br><span class="month">Per Month</span></h3>
+					 <h3><span class="rupees">₹</span>700<br><span class="month"></span></h3>
 					 <ul>
 						 <li><span>Advanced Plan</span></li>
 						 <li><a href="#">10GB Disk Space</a></li>
@@ -135,11 +135,11 @@
 						 <li><a href="#">Free Daily Backups</a></li>
 					 </ul>
 				 </div>
-				 <a class="popup-with-zoom-anim order-btn" href="#small-dialog">SUBSCRIPTION</a>
+				 <a class="popup-with-zoom-anim order-btn" href="process.aspx">SUBSCRIPTION</a>
 			 </div>	
 	         <div class="col-md-3 thumb_2">
 							<div class="pricing-table-grid plan_box">
-								<h3><span class="rupees">₹</span>800<br><span class="month">Per Month</span></h3>
+								<h3><span class="rupees">₹</span>800<br><span class="month"></span></h3>
 								<ul>
 									<li><span>Business Plan</span></li>
 									<li><a href="#">10GB Disk Space</a></li>
@@ -151,7 +151,7 @@
 		    </div>
 	        <div class="col-md-3 thumb_2">
 							<div class="pricing-table-grid plan_box">
-								<h3><span class="rupees">₹</span>900<br><span class="month">Per Month</span></h3>
+								<h3><span class="rupees">₹</span>900<br><span class="month"></span></h3>
 								<ul>
 									<li><span>Gold Plan</span></li>
 									<li><a href="#">10GB Disk Space</a></li>
