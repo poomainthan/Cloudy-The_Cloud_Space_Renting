@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/cloudy.Master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="WebApplication_master_testing.WebForm1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/cloudy.Master" AutoEventWireup="true" CodeBehind="indexusr.aspx.cs" Inherits="WebApplication_master_testing.usr.indexusr" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -11,8 +11,7 @@
 				<div class="cssmenu">
 					<ul>
 						<li><a href="mailto:clodyspace12@gmail.com">info(at)cloudyspace.com</a></li>
-						<li class="active"><a href="login.aspx">Log In</a></li>
-						<li><a href="register.aspx">Register</a></li>
+						
 					</ul>
 				</div>
 				<div class="clearfix"> </div>
@@ -69,43 +68,51 @@
 			<!-- FlexSlider -->
 		</div>
 	</div>
+	<form id="form1" runat="server">
 	<div class="domain">
 		<div class="container">
 			<form class="search-form domain-search">
-				<div class="two-fifth column first">
+				
+				<div class="two-fifth column first" runat="server">
 					<img src="images/magnifying.png" alt="" / width="50" height="50">
 					<h2><span class="m_1">search your</span><br>domain</h2>
 				</div>
-				<div class="three-fifth column first">
-					<input type="text" class="text" value="Enter your domain name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your domain name';}">
+				
+				<div class="three-fifth column first" runat="server">
+                    <asp:TextBox runat="server" OnTextChanged="Unnamed1_TextChanged"></asp:TextBox>
 				</div>
-				<div class="one-fifth column">
+					
+				<div class="one-fifth column" runat="server">
 					<span class="selection-box">
-						<select class="domains valid" name="domains">
-							<option>Year(0-1 Year)</option>
-							<option>.com(From ₹700 / Year)</option>
-							<option>.info (From ₹580/ Year)</option>
-							<option>.net (From ₹450 / Year)</option>
-							<option>.org (From ₹400 / Year)</option>
-						</select>
+                        <asp:DropDownList ID="DropDownList2" runat="server" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged1">
+							<asp:ListItem Value="01">Year(0-1 year)</asp:ListItem>
+							<asp:ListItem Value="02">.com(₹700)</asp:ListItem> 
+                            <asp:ListItem Value="03">.org(₹500)</asp:ListItem> 
+                            <asp:ListItem Value="04">.info(₹450)</asp:ListItem> 
+                            <asp:ListItem Value="05">.net(₹450)</asp:ListItem>
+						</asp:DropDownList>
 					</span>
 				</div>
-				<div class="one-fifth column">
+				<div class="one-fifth column" runat="server">
 					<span class="selection-box">
-						<select class="domains valid" name="domains">
-							<option>.com(From ₹700 / Year)</option>
-							<option>.info(From ₹580 / Year)</option>
-							<option>.net (From ₹400 / Year)</option>
-							<option>.org (From ₹450 / Year)</option>
-						</select>
+                        <asp:DropDownList ID="DropDownList1" runat="server" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged">
+							
+							<asp:ListItem Value="02">.com(₹700)</asp:ListItem> 
+                            <asp:ListItem Value="03">.org(₹500)</asp:ListItem> 
+                            <asp:ListItem Value="04">.info(₹450)</asp:ListItem> 
+                            <asp:ListItem Value="05">.net(₹450)</asp:ListItem> 
+						</asp:DropDownList>
+					
 					</span>
 				</div>
-				<div class="one-fifth column">
-					<input type="submit" value="Search">
-				</div>
-				<div class="clearfix"> </div>
-			</form>
-		</div>
+					
+			<div class="one-fifth column" runat="server">
+					
+                <asp:Button runat="server" Text="SUBMIT" OnClick="Unnamed2_Click"></asp:Button>
+				</div></form>
+					
+                <div class="clearfix">
+                    </div> </div>
 	</div>
 	<div class="benefit">
 		<div class="container">
@@ -225,21 +232,24 @@
 	</div>
 	<div class="domain">
 		<div class="container">
-			<form class="search-form domain-search">
-				<div class="two-fifth signup column first">
+			
+				
+				<div class="two-fifth signup column first" >
 					<img src="images/message.png" alt="" / width="50" height="50">
 					<h2><span class="m_1">Sign Up Your</span><br>Newsletter</h2>
 				</div>
-				<div class="three-fifth searchbar column first">
-					<input type="text" class="text" value="Enter your domain name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your domain name';}">
+				<div class="three-fifth searchbar column first" runat="server">
+                    <asp:TextBox runat="server" OnTextChanged="Unnamed1_TextChanged1">Enter your domain</asp:TextBox> 
 				</div>
 				<div class="one-fifth col_2 "><br />
 			       <p class="active"><b><a href="domainmanage.aspx">MANAGEDOMAIN</a></b></p>
 				</div>
-				<div class="clearfix"> </div>
-			</form>
+				<div class="clearfix">
+                    </div>
+			
 		</div>
 	</div>
+	</form>
 		<script>
             $(function () {
                 SyntaxHighlighter.all();
@@ -252,5 +262,11 @@
                     }
                 });
             });
-		</script>
- </asp:Content>
+        </script>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder3" runat="server">
+</asp:Content>
+<asp:Content ID="Content5" ContentPlaceHolderID="footer" runat="server">
+</asp:Content>

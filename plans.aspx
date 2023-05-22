@@ -96,7 +96,6 @@
 								</ul>
 							 </div>
 					<div id="small-dialog" class="mfp-hide">
-						<asp:panel ID="panel1" runat="server">
 							<div class="pop_up">
 									 	<div class="payment-online-form-left">
 											<form>
@@ -125,8 +124,7 @@
 											</form>
 										</div>
 						  			</div>
-							<asp:Button id="button2" runat="server" Text="Subscription" />
-						</asp:panel>
+		
 					</div>
 
 		     </div>
@@ -142,7 +140,7 @@
 					 </ul>
 				 </div>
 
-				 <a class="popup-with-zoom-anim order-btn" href="smallpop.aspx">SUBSCRIPTION</a>
+				 <a class="popup-with-zoom-anim order-btn" href="process.aspx">SUBSCRIPTION</a>
 			 </div>	
 	         <div class="col-md-3 thumb_2">
 							<div class="pricing-table-grid plan_box">
