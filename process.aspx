@@ -6,13 +6,13 @@
         <div class="container">
             <div class="header_top">
                 <div class="logo">
-                    <a href="index.html"><img src="images/cloudysp.png" alt="" / width="50" height="50"><p>CLOUDY SPACE</p></a>
+                    <a href="index.aspx"><img src="images/cloudysp.png" alt="" / width="50" height="50"><p>CLOUDY SPACE</p></a>
                 </div>
                 <div class="cssmenu">
                     <ul>
                         <li><a href="mailto:clodyspace12@gmail.com">info(at)cloudyspace.com</a></li>
-                        <li class="active"><a href="login.html">Log In</a></li>
-                        <li><a href="register.html">Register</a></li>
+                        <li class="active"><a href="login.aspx">Log In</a></li>
+                        <li><a href="register.aspx">Register</a></li>
                     </ul>
                 </div>
                 <div class="clearfix"> </div>
@@ -21,15 +21,15 @@
                 <!-- start h_menu4 -->
                 <a class="toggleMenu" href="#">Menu</a>
                 <ul class="nav">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="service.html">Service</a></li>
-                    <li><a href="plans.html">Plans</a></li>
-                    <li><a href="domain.html">Domain</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="support.html">Support</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li class="active"><a href="index.aspx">Home</a></li>
+                    <li><a href="about.aspx">About Us</a></li>
+                    <li><a href="service.aspx">Service</a></li>
+                    <li><a href="plans.aspx">Plans</a></li>
+                    <li><a href="domain.aspx">Domain</a></li>
+                    <li><a href="faq.aspx">FAQ</a></li>
+                    <li><a href="blog.aspx">Blog</a></li>
+                    <li><a href="support.aspx">Support</a></li>
+                    <li><a href="contact.aspx">Contact Us</a></li>
                 </ul>
                 <script type="text/javascript" src="js/nav.js"></script>
             </div><!-- end h_menu4 -->
@@ -95,7 +95,7 @@
 
                             <ul class="payment-sendbtns">
                                 <li><input type="button" value="Cancel"></li>
-                                <li class="active"><a href="order.html">purchase</a></li>
+                                <li class="active"><a href="order.aspx">purchase</a></li>
                             </ul>
                             <div class="clearfix"> </div>
                         </form>
@@ -159,7 +159,7 @@
 
                         <ul class="payment-sendbtns">
                             <li><input type="reset" value="Cancel"></li>
-                            <li class="active"><a href="order.html">purchase</a></li>
+                            <li class="active"><a href="order.aspx">purchase</a></li>
                         </ul>
                         <div class="clearfix"> </div>
                     </form>
@@ -222,7 +222,7 @@
 
                         <ul class="payment-sendbtns">
                             <li><input type="button" value="Cancel"></li>
-                            <li class="active"><a href="order.html">purchase</a></li>
+                            <li class="active"><a href="order.aspx">purchase</a></li>
                         </ul>
                         <div class="clearfix"> </div>
                     </form>
@@ -284,7 +284,7 @@
 
                         <ul class="payment-sendbtns">
                             <li><input type="reset" value="Cancel"></li>
-                            <li class="active"><a href="order.html">purchase</a></li>
+                            <li class="active"><a href="order.aspx">purchase</a></li>
                         </ul>
                         <div class="clearfix"> </div>
                     </form>
