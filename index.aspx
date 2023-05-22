@@ -235,8 +235,8 @@
 				<div class="three-fifth searchbar column first">
 					<input type="text" class="text" value="Enter your domain name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your domain name';}">
 				</div>
-				<div class="one-fifth col_2 "><br><br>
-					<p class="active"><b><a href="domainmanage.aspx">MANAGE DOMAIN</a></b></p>
+				<div class="one-fifth col_2 "><br />
+			       <p class="active"><b><a href="domainmanage.aspx">MANAGEDOMAIN</a></b></p>
 				</div>
 				<div class="clearfix"> </div>
 			</form>
