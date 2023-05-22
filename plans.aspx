@@ -1,5 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/cloudy.Master" AutoEventWireup="true" CodeBehind="plans.aspx.cs" Inherits="WebApplication_master_testing.WebForm4" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script src="js/jquery.magnific-popup.js"></script>
+    <link href="css/popup.css" rel="stylesheet" />
     <link href="css/popup.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -92,9 +94,10 @@
 									<li><a href="#">Free Daily Backups</a></li>
 									<li><a href="#">Managed Hosting</a></li>
 								</ul>
-							</div>
-							<div id="small-dialog" class="mfp-hide">
-									<div class="pop_up">
+							 </div>
+					<div id="small-dialog" class="mfp-hide">
+						<asp:panel ID="panel1" runat="server">
+							<div class="pop_up">
 									 	<div class="payment-online-form-left">
 											<form>
 												<h4><span class="shipping"> </span>Shipping</h4>
@@ -122,7 +125,10 @@
 											</form>
 										</div>
 						  			</div>
-								</div>
+							<asp:Button id="button2" runat="server" Text="Subscription" />
+						</asp:panel>
+					</div>
+
 		     </div>
 			 <div class="col-md-3 thumb_2">
 				 <div class="pricing-table-grid plan_box">
@@ -135,7 +141,8 @@
 						 <li><a href="#">Free Daily Backups</a></li>
 					 </ul>
 				 </div>
-				 <a class="popup-with-zoom-anim order-btn" href="process.aspx">SUBSCRIPTION</a>
+
+				 <a class="popup-with-zoom-anim order-btn" href="smallpop.aspx">SUBSCRIPTION</a>
 			 </div>	
 	         <div class="col-md-3 thumb_2">
 							<div class="pricing-table-grid plan_box">

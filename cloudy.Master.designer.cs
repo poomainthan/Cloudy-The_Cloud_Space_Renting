@@ -42,6 +42,15 @@ namespace WebApplication_master_testing
         protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder2;
 
         /// <summary>
+        /// ContentPlaceHolder3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder3;
+
+        /// <summary>
         /// footer control.
         /// </summary>
         /// <remarks>
