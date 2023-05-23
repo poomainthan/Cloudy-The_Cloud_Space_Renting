@@ -9,6 +9,7 @@
             </h4>
            
             <div class="new_domain">
+                <p><center><b>DETAILS</b></center></p>
           
                 <div class="col-md-6">
                     <ul class="list_3">
