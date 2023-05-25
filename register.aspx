@@ -41,32 +41,34 @@
 </div>
 <div class="account_grid">
 	<div class="container">
+       
 		<div class="register">
 			<form onsubmit= "sendemail(); reset(); return false;">
+				<form id="form1" runat="server">
 				<div class="register-top-grid">
 					<h4 class="tz-title-5 tzcolor-blue">
 						<p class="tzweight_Bold"><span class="m_20">Personal Information</span></p>
 					</h4>
-					<div>
-						<span class="m_25">First Name<label>*</label></span>
-						<input type="text">
+					<div>						
+						<span class="m_25">First Name<label>*</label></span> <asp:TextBox runat="server" ID="text1"></asp:TextBox>						
 					</div>
 					<div>
-						<span class="m_25">Last Name<label>*</label></span>
-						<input type="text">
+						<span class="m_25">Last Name<label>*</label></span><asp:TextBox runat="server" ID="text2"></asp:TextBox>
+						
 					</div>
 					<div>
-						<span class="m_25">Email Address<label>*</label></span>
-						<input type="text">
+						<span class="m_25">Email Address<label>*</label></span><asp:TextBox runat="server" ID="text3"></asp:TextBox>
+						
 					</div><br><br>
 					<div class="one-fifth column">
-						<input type="submit" value="Submit">
+						
+                        <asp:Button runat="server" Text="Register" OnClick="Unnamed3_Click"></asp:Button>
 					</div>
 
 					<div class="clearfix"> </div>
 				</div>
 			</form>
-			
+				</form>
 			</div>
 			</div>
 	</div>
