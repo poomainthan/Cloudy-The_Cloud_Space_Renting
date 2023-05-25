@@ -36,6 +36,7 @@
 	      </div><!-- end h_menu4 -->
      </div>
 </div>
+	<form id="form1" runat="server">
 <div class="about">
 	 <div class="container">
 		<h1>About Us<span class="m_1"><br>What we are</span></h1>
@@ -117,7 +118,7 @@
 			                       	   <h2><span class="m_1">Sign Up Your</span><br>Newsletter</h2>
 			                       </div>
                                 	<div class="three-fifth searchbar column first">
-                                    	<input type="text" class="text" value="Enter your domain name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your domain name';}">               
+                                        <asp:TextBox ID="TextBox1" runat="server" OnTextChanged="TextBox1_TextChanged">Enter your domain</asp:TextBox>
                                     </div>
 									<div class="one-fifth col_2 ">
 										<br/>
@@ -127,4 +128,5 @@
                  </form>
         </div>
 </div>
+		</form>
 </asp:Content>

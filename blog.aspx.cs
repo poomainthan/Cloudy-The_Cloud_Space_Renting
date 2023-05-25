@@ -13,5 +13,30 @@ namespace WebApplication_master_testing
         {
 
         }
+
+        protected void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void TextBox1_TextChanged1(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Unnamed4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Unnamed3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void TextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
