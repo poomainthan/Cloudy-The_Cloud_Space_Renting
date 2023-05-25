@@ -13,5 +13,25 @@ namespace WebApplication_master_testing
         {
 
         }
+
+        protected void fname(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void lname(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void email(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void register_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
