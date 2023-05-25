@@ -6,7 +6,7 @@
 	<div class="container">
 		<div class="header_top">
 			<div class="logo">
-				<a href="index.aspx"><img src="images/cloudysp.png" alt=""/ width="50" height="50"><p>CLOUDY SPACE</p></a>
+				<a href="index.aspx"><p>CLOUDY SPACE</p></a>
 			</div> 
 			<div class="cssmenu">
 				<ul>
@@ -41,6 +41,7 @@
 </div>
 <div class="account_grid">
 	<div class="container">
+       
 		<div class="register">
 			<form onsubmit= "sendemail(); reset(); return false;">
 				<form id="form1" runat="server">
@@ -48,18 +49,25 @@
 					<h4 class="tz-title-5 tzcolor-blue">
 						<p class="tzweight_Bold"><span class="m_20">Personal Information</span></p>
 					</h4>
-					<div>						<span class="m_25">First Name<label>*</label></span><asp:TextBox runat="server" OnTextChanged="Unnamed4_TextChanged"></asp:TextBox>
+					<div>						
+						<span class="m_25">First Name<label>*</label></span> <asp:TextBox runat="server" ID="text1"></asp:TextBox>						
+					</div>
+					<div>
+						<span class="m_25">Last Name<label>*</label></span><asp:TextBox runat="server" ID="text2"></asp:TextBox>
 						
 					</div>
 					<div>
-						<span class="m_25">Last Name<label>*</label></span><asp:TextBox runat="server" OnTextChanged="Unnamed1_TextChanged"></asp:TextBox>
+						<span class="m_25"><label>*</label></span><asp:TextBox runat="server" ID="text3"></asp:TextBox>
 						
 					</div>
+
 					<div>
-						<span class="m_25">Email Address<label>*</label></span><asp:TextBox runat="server" OnTextChanged="Unnamed2_TextChanged"></asp:TextBox>
+						<span class="m_25"><label>*</label></span><asp:TextBox runat="server" ID="Text"></asp:TextBox>
 						
-					</div><br><br>
+					</div>
+					<br><br>
 					<div class="one-fifth column">
+                        
 						
                         <asp:Button runat="server" Text="Register" OnClick="Unnamed3_Click"></asp:Button>
 					</div>
