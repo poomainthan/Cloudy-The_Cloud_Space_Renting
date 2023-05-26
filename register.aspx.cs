@@ -22,7 +22,7 @@ namespace WebApplication_master_testing
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\STUDENT\Documents\cloudy.mdf;Integrated Security=True;Connect Timeout=30");
+            conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\STUDENT\Documents\cloud storing.mdf"";Integrated Security=True;Connect Timeout=30");
             Response.Write("<script>alert('welcome')</script>");
             try
             {
@@ -61,7 +61,7 @@ namespace WebApplication_master_testing
         {
             //insert//
             conn.Open();
-            cmd = new SqlCommand("insert into clients values('"+text1.Text+ "','"+text2.Text+ "','"+text3.Text+"')", conn);
+            cmd = new SqlCommand("insert into testreg values('"+text1.Text+ "','"+text2.Text+ "','"+text3.Text+"')", conn);
             if(cmd.ExecuteNonQuery()!=0)
             {
                 Response.Write("<script>alert('Data inserted successfully')</script>");
