@@ -50,18 +50,24 @@
 						<p class="tzweight_Bold"><span class="m_20">Personal Information</span></p>
 					</h4>
 					<div>						
-						<span class="m_25">First Name<label>*</label></span> <asp:TextBox runat="server" ID="text1"></asp:TextBox>						
+						<span class="m_25">First Name<label>*</label></span>
+						<asp:TextBox runat="server" ID="rfname" OnTextChanged="rfname_TextChanged"></asp:TextBox>						
 					</div>
 					<div>
-						<span class="m_25">Last Name<label>*</label></span><asp:TextBox runat="server" ID="text2"></asp:TextBox>
+						<span class="m_25">Last Name<label>*</label></span>
+						<asp:TextBox runat="server" ID="rlname" OnTextChanged="rlname_TextChanged"></asp:TextBox>	
+					</div>
+					<div>
+						<span class="m_25">Email Address<label>*</label></span>
+						<asp:TextBox runat="server" ID="remail" OnTextChanged="remail_TextChanged"></asp:TextBox>
 						
 					</div>
 					<div>
-						<span class="m_25">Email Address<label>*</label></span><asp:TextBox runat="server" ID="text3"></asp:TextBox>
-						
-					</div><br><br>
+						<span class="m_25">Password<label>*</label></span><asp:TextBox runat="server"></asp:TextBox>
+							
+					</div>
+					<br><br>
 					<div class="one-fifth column">
-						
                         <asp:Button runat="server" Text="Register" OnClick="Unnamed3_Click"></asp:Button>
 					</div>
 

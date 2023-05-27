@@ -6,7 +6,6 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.Sql;
 using System.Data.SqlClient;
-
 using System.Data;
 
 namespace WebApplication_master_testing
@@ -22,7 +21,7 @@ namespace WebApplication_master_testing
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\STUDENT\Documents\cloud storing.mdf"";Integrated Security=True;Connect Timeout=30");
+            conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\STUDENT\Documents\logindatabase.mdf;Integrated Security=True;Connect Timeout=30");
             Response.Write("<script>alert('welcome')</script>");
             try
             {
@@ -37,22 +36,22 @@ namespace WebApplication_master_testing
             conn.Close();
         }
 
-        protected void fname(object sender, EventArgs e)
+        protected void rfname_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        protected void lname(object sender, EventArgs e)
+        protected void rlname_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        protected void email(object sender, EventArgs e)
+        protected void remail_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        protected void register_Click(object sender, EventArgs e)
+        protected void rpass_TextChanged(object sender, EventArgs e)
         {
 
         }
@@ -61,8 +60,8 @@ namespace WebApplication_master_testing
         {
             //insert//
             conn.Open();
-            cmd = new SqlCommand("insert into testreg values('"+text1.Text+ "','"+text2.Text+ "','"+text3.Text+"')", conn);
-            if(cmd.ExecuteNonQuery()!=0)
+            cmd = new SqlCommand("insert into register values('" + rfname.Text + "','" + rlname.Text + "','" + remail.Text + "','" + rpass.Text + "')", conn);
+            if (cmd.ExecuteNonQuery() != 0)
             {
                 Response.Write("<script>alert('Data inserted successfully')</script>");
             }
@@ -70,8 +69,7 @@ namespace WebApplication_master_testing
             {
                 Response.Write("<script>alert('Data inserted failure')</script>");
             }
-            conn.Close ();
-
+            conn.Close();
         }
     }
 }

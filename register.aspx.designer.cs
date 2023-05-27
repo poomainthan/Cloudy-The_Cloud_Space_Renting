@@ -24,30 +24,30 @@ namespace WebApplication_master_testing
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// text1 control.
+        /// rfname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox text1;
+        protected global::System.Web.UI.WebControls.TextBox rfname;
 
         /// <summary>
-        /// text2 control.
+        /// rlname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox text2;
+        protected global::System.Web.UI.WebControls.TextBox rlname;
 
         /// <summary>
-        /// text3 control.
+        /// remail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox text3;
+        protected global::System.Web.UI.WebControls.TextBox remail;
     }
 }
