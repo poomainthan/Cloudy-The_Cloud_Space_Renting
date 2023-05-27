@@ -22,12 +22,12 @@ namespace WebApplication_master_testing
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\STUDENT\Documents\cloud storing.mdf"";Integrated Security=True;Connect Timeout=30");
+            conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\STUDENT\Documents\register.mdf;Integrated Security=True;Connect Timeout=30");
             Response.Write("<script>alert('welcome')</script>");
             try
             {
                 conn.Open();
-                
+
             }
             catch
             {
@@ -35,34 +35,44 @@ namespace WebApplication_master_testing
 
             }
             conn.Close();
-        }
+        }     
 
-        protected void fname(object sender, EventArgs e)
+        protected void text1_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        protected void lname(object sender, EventArgs e)
+        protected void text2_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        protected void email(object sender, EventArgs e)
+        protected void Text3_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        protected void register_Click(object sender, EventArgs e)
+        protected void Text4_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        protected void Unnamed3_Click(object sender, EventArgs e)
+        protected void text5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Text6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
         {
             //insert//
             conn.Open();
-            cmd = new SqlCommand("insert into testreg values('"+text1.Text+ "','"+text2.Text+ "','"+text3.Text+"')", conn);
-            if(cmd.ExecuteNonQuery()!=0)
+            cmd = new SqlCommand("insert into table1 values('" +fname.Text+ "','" +lname.Text+ "','" +username.Text+ "','" +password.Text+ "','" +email.Text+ "','" +companyname.Text+ "')", conn);
+            if (cmd.ExecuteNonQuery() != 0)
             {
                 Response.Write("<script>alert('Data inserted successfully')</script>");
             }
@@ -70,12 +80,7 @@ namespace WebApplication_master_testing
             {
                 Response.Write("<script>alert('Data inserted failure')</script>");
             }
-            conn.Close ();
-
-        }
-
-        protected void Button1_Click(object sender, EventArgs e)
-        {
+            conn.Close();
 
         }
     }
