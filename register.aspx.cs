@@ -6,7 +6,6 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.Sql;
 using System.Data.SqlClient;
-
 using System.Data;
 
 namespace WebApplication_master_testing
@@ -22,7 +21,7 @@ namespace WebApplication_master_testing
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\STUDENT\Documents\register.mdf;Integrated Security=True;Connect Timeout=30");
+            conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\STUDENT\Documents\logindatabase.mdf;Integrated Security=True;Connect Timeout=30");
             Response.Write("<script>alert('welcome')</script>");
             try
             {
@@ -71,7 +70,7 @@ namespace WebApplication_master_testing
         {
             //insert//
             conn.Open();
-            cmd = new SqlCommand("insert into table1 values('" +fname.Text+ "','" +lname.Text+ "','" +username.Text+ "','" +password.Text+ "','" +email.Text+ "','" +companyname.Text+ "')", conn);
+            cmd = new SqlCommand("insert into register values('" +fname.Text+ "','" +lname.Text+ "','" +username.Text+ "','" +password.Text+ "','" +emailid.Text+ "','" +companyname.Text+ "')", conn);
             if (cmd.ExecuteNonQuery() != 0)
             {
                 Response.Write("<script>alert('Data inserted successfully')</script>");
@@ -79,8 +78,9 @@ namespace WebApplication_master_testing
             else
             {
                 Response.Write("<script>alert('Data inserted failure')</script>");
+                Response.Redirect("~/login.aspx");
             }
-            conn.Close();
+            
 
         }
     }

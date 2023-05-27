@@ -66,7 +66,7 @@
 						
 					</div>
 					<div>
-						<span class="m_25">Email Address<label>*</label></span><asp:TextBox runat="server" ID="email" OnTextChanged="text5_TextChanged"></asp:TextBox>
+						<span class="m_25">Email Address<label>*</label></span><asp:TextBox runat="server" ID="emailid" OnTextChanged="text5_TextChanged"></asp:TextBox>
 						
 					</div>
 					<div>

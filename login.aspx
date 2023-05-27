@@ -1,4 +1,4 @@
-﻿          <%@ Page Title="" Language="C#" MasterPageFile="~/cloudy.Master" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="WebApplication_master_testing.WebForm10" %>
+﻿          <%@ Page Title="" Language="C#" MasterPageFile="~/cloudy.Master" AutoEventWireup="true" EnableEventValidation = "false" CodeBehind="login.aspx.cs" Inherits="WebApplication_master_testing.WebForm10" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -48,6 +48,7 @@
 				 <p>By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.</p>
 				 <a class="acount-btn" href="register.aspx">Create an Account</a>
 			   </div>
+		<form ID="form3" runat="server">
 			   <div class="col-md-6 login-right">
 			   	<h4 class="tz-title-5 tzcolor-blue">
                     <p class="tzweight_Bold"><span class="m_20">Registered Customers</span></p>
@@ -56,19 +57,24 @@
 				<p>If you have an account with us, please log in.</p>
 				<form>
 				  <div>
-					<span class="m_25">Email Address<label>*</label></span>
-					<input type="text"> 
+					<span class="m_25">Email Address<label>*</label></span><asp:TextBox runat="server" ID="emailid" ></asp:TextBox>
+					 
 				  </div>
 				  <div>
-					<span class="m_25">Password<label>*</label></span>
-					<input type="text"> 
+					<span class="m_25">Password<label>*</label></span><asp:TextBox runat="server" ID="passd" ></asp:TextBox>
+					 
 				  </div>
-				 
-					  <a class="forgot" href="#">Forgot Your Password?</a><br><br>
-					  <p class="active"><b><a href="plans.aspx">log in</a></b></p>
-				  
+					
+					  <a class="forgot" href="#"><u>Forgot Your Password?</u></a><br><br>
+					  <p class="active"><b><a href=""></a></b></p>
+					  <center><i>
+					  <asp:Label ID="loginerrormsg" runat="server" Text="Invalid user credentials & try again"></asp:Label></center></i>
+					  <center>
+                          <asp:Button ID="loginbutton" runat="server" Text="Login" OnClick="loginbutton_Click"></asp:Button>
+					  </center>
 			    </form>
 			   </div>	
+		</form>
 			   <div class="clearfix"> </div>
       </div>
 </div>
