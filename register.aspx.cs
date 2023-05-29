@@ -6,7 +6,6 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.Sql;
 using System.Data.SqlClient;
-
 using System.Data;
 
 namespace WebApplication_master_testing
@@ -22,12 +21,12 @@ namespace WebApplication_master_testing
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\STUDENT\Documents\cloud storing.mdf"";Integrated Security=True;Connect Timeout=30");
+            conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\STUDENT\Documents\logindatabase.mdf;Integrated Security=True;Connect Timeout=30");
             Response.Write("<script>alert('welcome')</script>");
             try
             {
                 conn.Open();
-                
+
             }
             catch
             {
@@ -35,52 +34,53 @@ namespace WebApplication_master_testing
 
             }
             conn.Close();
-        }
-
-        protected void fname(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void lname(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void email(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void register_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void Unnamed3_Click(object sender, EventArgs e)
-        {
-            //insert//
-            conn.Open();
-            cmd = new SqlCommand("insert into testreg values('"+text1.Text+ "','"+text2.Text+ "','"+text3.Text+"')", conn);
-            if(cmd.ExecuteNonQuery()!=0)
-            {
-                Response.Write("<script>alert('Data inserted successfully')</script>");
-            }
-            else
-            {
-                Response.Write("<script>alert('Data inserted failure')</script>");
-            }
-            conn.Close ();
-
-        }
+        }     
 
         protected void text1_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        protected void text1_TextChanged1(object sender, EventArgs e)
+        protected void text2_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        protected void Text3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Text4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void text5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Text6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            //insert//
+            conn.Open();
+            cmd = new SqlCommand("insert into register values('" +fname.Text+ "','" +lname.Text+ "','" +username.Text+ "','" +password.Text+ "','" +emailid.Text+ "','" +companyname.Text+ "')", conn);
+            if (cmd.ExecuteNonQuery() != 0)
+            {
+                Response.Write("<script>alert('Data inserted successfully')</script>");
+            }
+            else
+            {
+                Response.Write("<script>alert('Data inserted failure')</script>");
+                Response.Redirect("~/login.aspx");
+            }
+            
 
         }
     }

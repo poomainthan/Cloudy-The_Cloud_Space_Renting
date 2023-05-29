@@ -30,6 +30,7 @@
 					<li><a href="support.aspx">Support</a></li>
 					<li><a href="contact.aspx">Contact Us</a></li>
 				 </ul>
+
 				 <script type="text/javascript" src="js/nav.js"></script>
 	      </div><!-- end h_menu4 -->
      </div>
@@ -50,19 +51,31 @@
 						<p class="tzweight_Bold"><span class="m_20">Personal Information</span></p>
 					</h4>
 					<div>						
-						<span class="m_25">First Name<label>*</label></span> <asp:TextBox runat="server" ID="text1" ></asp:TextBox>						
+						<span class="m_25">First Name<label>*</label></span> <asp:TextBox runat="server" ID="fname"></asp:TextBox>						
 					</div>
 					<div>
-						<span class="m_25">Last Name<label>*</label></span><asp:TextBox runat="server" ID="text2"></asp:TextBox>
+						<span class="m_25">Last Name<label>*</label></span><asp:TextBox runat="server" ID="lname" OnTextChanged="text2_TextChanged"></asp:TextBox>
 						
 					</div>
 					<div>
-						<span class="m_25">Email Address<label>*</label></span><asp:TextBox runat="server" ID="text3"></asp:TextBox>
+						<span class="m_25">Username<label>*</label></span><asp:TextBox runat="server" ID="username" OnTextChanged="Text3_TextChanged"></asp:TextBox>
+						
+					</div>
+					<div>
+						<span class="m_25">Password<label>*</label></span><asp:TextBox runat="server" ID="password" OnTextChanged="Text4_TextChanged"></asp:TextBox>
+						
+					</div>
+					<div>
+						<span class="m_25">Email Address<label>*</label></span><asp:TextBox runat="server" ID="emailid" OnTextChanged="text5_TextChanged"></asp:TextBox>
+						
+					</div>
+					<div>
+						<span class="m_25">Company Name<label>*</label></span><asp:TextBox runat="server" ID="companyname" OnTextChanged="Text6_TextChanged"></asp:TextBox>
 						
 					</div><br><br>
 					<div class="one-fifth column">
 						
-                        <asp:Button runat="server" Text="Register" OnClick="Unnamed3_Click"></asp:Button>
+                        <asp:Button ID="Button1" runat="server" Text="SUBMIT" OnClick="Button1_Click" />
 					</div>
 
 					<div class="clearfix"> </div>
