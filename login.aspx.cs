@@ -16,16 +16,14 @@ namespace WebApplication_master_testing
         protected void Page_Load(object sender, EventArgs e)
         {
             loginerrormsg.Visible = false;
-            
             try
             {
               
                 Response.Write("<script>alert('welcome to login page')</script>");
             }
-            catch { 
-            }
-            
-                
+            catch 
+            { 
+            } 
         }
         protected void loginbutton_Click(object sender, EventArgs e)
         {

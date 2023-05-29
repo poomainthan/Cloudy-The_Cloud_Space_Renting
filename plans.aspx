@@ -14,8 +14,7 @@
 			<div class="cssmenu">
 					<ul>
 						<li><a href="mailto:clodyspace12@gmail.com">info(at)cloudyspace.com</a></li> 
-						<li class="active"><a href="login.aspx">Log In</a></li> 
-						<li><a href="register.aspx">Register</a></li>
+						
 					</ul>
 			</div>
 			<div class="clearfix"> </div>
@@ -30,7 +29,7 @@
 					<li><a href="domain.aspx">Domain</a></li>
 					<li><a href="faq.aspx">FAQ</a></li>
 					<li><a href="blog.aspx">Blog</a></li>
-					<li><a href="support.aspx">Support</a></li>
+					<li><a href="supportuser.aspx">Support</a></li>
 					<li><a href="contact.aspx">Contact Us</a></li>
 				 </ul>
 				 <script type="text/javascript" src="js/nav.js"></script>

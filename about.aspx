@@ -3,7 +3,7 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
+	<form id="from2" runat="server">
 <div class="header">
 	<div class="container">
 		<div class="header_top">
@@ -36,9 +36,9 @@
 	      </div><!-- end h_menu4 -->
      </div>
 </div>
-	<form id="form1" runat="server">
-<div class="about">
-	 <div class="container">
+
+	<div class="about">
+			<div class="container">
 		<h1>About Us<span class="m_1"><br>What we are</span></h1>
 	</div>
 </div>
@@ -112,21 +112,23 @@
 </div>
 <div class="domain">
 	  <div class="container">
-		              <form id="form1" runat="server">
-			                       <div class="two-fifth signup column first">
-									   <img src="images/message.png" alt="" / width="50" height="50">
-			                       	   <h2><span class="m_1">Sign Up Your</span><br>Newsletter</h2>
-			                       </div>
-                                	<div class="three-fifth searchbar column first">
-                                    	<input type="text" class="text" value="Enter your domain name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your domain name';}">               
-                                    </div>
-									<div class="one-fifth col_2 ">
-										<br/>
-											<p class="active"><b><a href="domainmanage.aspx">MANAGEDOMAIN</a></b></p>
-									</div>
-                                    <div class="clearfix"> </div>
-                      </form>
-        </div>
+		              <form id="form3" runat="server">
+						  <div class="two-fifth signup column first">
+							  <img src="images/message.png" alt="" / width="50" height="50">
+							  <h2><span class="m_1">Sign Up Your</span><br>Newsletter</h2>
+
+						  </div>
+						  <div class="three-fifth searchbar column first">
+							  <input type="text" class="text" value="Enter your domain name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your domain name';}">
+						  </div>
+						  <div class="one-fifth col_2 "><br/>
+							  <p class="active"><b><a href="domainmanage.aspx">MANAGEDOMAIN</a></b></p>
+
+						  </div>
+						  <div class="clearfix"> </div>
+
+		              </form>
+	  </div>
 </div>
 		</form>
 </asp:Content>
