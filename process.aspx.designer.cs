@@ -33,30 +33,30 @@ namespace WebApplication_master_testing
         protected global::System.Web.UI.WebControls.Button process_stdorder;
 
         /// <summary>
-        /// process_advanceorder control.
+        /// Button2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button process_advanceorder;
+        protected global::System.Web.UI.WebControls.Button Button2;
 
         /// <summary>
-        /// process_busorder control.
+        /// Button3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button process_busorder;
+        protected global::System.Web.UI.WebControls.Button Button3;
 
         /// <summary>
-        /// process_goldorder control.
+        /// Button4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button process_goldorder;
+        protected global::System.Web.UI.WebControls.Button Button4;
     }
 }

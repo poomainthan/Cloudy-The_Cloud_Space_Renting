@@ -26,11 +26,11 @@ namespace WebApplication_master_testing
 
         protected void process_advanceorder_Click(object sender, EventArgs e)
         {
-            Session["pname"] = "STANDARD PLAN";
+            Session["pname"] = "ADVANCED PLAN";
             Session["validity"] = "1 YEAR";
-            Session["space"] = "10 GB DISKSPACE";
-            Session["features"] = "1 TB FREE BACKUP";
-            Session["amt"] = "600";
+            Session["space"] = "12 GB DISKSPACE";
+            Session["features"] = "1 TB BANDWIDTH, FREE BACKUPS";
+            Session["amt"] = "700";
             Response.Redirect("details.aspx");
         }
 
@@ -38,7 +38,7 @@ namespace WebApplication_master_testing
         {
             Session["pname"] = "GOLD PLAN";
             Session["validity"] = "1 YEAR";
-            Session["space"] = "10 GB DISKSPACE";
+            Session["space"] = "14 GB DISKSPACE";
             Session["features"] = "1 TB FREE BACKUP";
             Session["amt"] = "900";
             Response.Redirect("details.aspx");
@@ -46,11 +46,11 @@ namespace WebApplication_master_testing
 
         protected void process_busorder_Click(object sender, EventArgs e)
         {
-            Session["pname"] = "STANDARD PLAN";
+            Session["pname"] = "";
             Session["validity"] = "1 YEAR";
-            Session["space"] = "10 GB DISKSPACE";
+            Session["space"] = "11 GB DISKSPACE";
             Session["features"] = "1 TB FREE BACKUP";
-            Session["amt"] = "600";
+            Session["amt"] = "800";
             Response.Redirect("details.aspx");
         }
     }

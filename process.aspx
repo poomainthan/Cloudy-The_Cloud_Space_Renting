@@ -76,39 +76,6 @@
                         </div>
               
             </div>
-            <div id="small-dialog" class="mfp-hide">
-                <div class="pop_up">
-                    <div class="payment-online-form-left">
-                        <form>
-                            <h4><span class="shipping"> </span>PAYMENTS</h4>
-                            <ul>
-                                <li><input class="text-box-dark" type="checkbox" value="Last Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Last Name';}">DEBIT CARD</li><br>
-                                <li><input class="text-box-dark" type="checkbox" value="Last Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Last Name';}">CREDIT CARD</li>
-                            </ul><br>
-                            <p><b><u>ONLINE PAYMENTS</u></b></p>
-                            <ul>
-                                <li><input class="text-box-dark" type="checkbox" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">GPAY</li><br>
-                                <li><input class="text-box-dark" type="checkbox" value="Company Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Company Name';}">PHONEPAY</li>
-                            </ul>
-                            <ul>
-                                <li><input class="text-box-dark" type="text" value="UPI ID" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}"></li>
-                                <li><input class="text-box-dark" type="text" value="BANK NAME" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Address';}"></li>
-                                <div class="clearfix"> </div>
-                            </ul>
-                            <div class="clear"> </div>
-
-
-                            <ul class="payment-sendbtns">
-                                <li><input type="button" value="Cancel"></li>
-                                <li class="active"><a href="order.aspx">purchase</a></li>
-                            </ul>
-                            <div class="clearfix"> </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
     <div class="price">
         <div class="container">
             <h4 class="tz-title-4 tzcolor-blue">
@@ -141,40 +108,11 @@
 
                 <p><center>----------------------</center> </p>
             </div>
+            
             <div class="one-fifth column" runat="server">
-                <asp:Button runat="server" Text="process order" ID="process_advanceorder" OnClick="process_advanceorder_Click"></asp:Button>
+               <asp:Button runat="server" Text="PROCESS ORDER" ID="Button2"  OnClick="process_advanceorder_Click"></asp:Button>
+                
                 </div>
-        <div id="small-dialog" class="mfp-hide">
-            <div class="pop_up">
-                <div class="payment-online-form-left">
-                    <form>
-                        <h4><span class="shipping"> </span>Shipping</h4>
-                        <ul>
-                            <li><input class="text-box-dark" type="checkbox" value="Plan" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'plan';}">10 GB Disk space</li>
-                            <li><input class="text-box-dark" type="text" value="Last Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Last Name';}"></li>
-                        </ul>
-                        <ul>
-                            <li><input class="text-box-dark" type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"></li>
-                            <li><input class="text-box-dark" type="text" value="Company Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Company Name';}"></li>
-                        </ul>
-                        <ul>
-                            <li><input class="text-box-dark" type="text" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}"></li>
-                            <li><input class="text-box-dark" type="text" value="Address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Address';}"></li>
-                            <div class="clearfix"> </div>
-                        </ul>
-                        <div class="clear"> </div>
-
-
-                        <ul class="payment-sendbtns">
-                            <li><input type="reset" value="Cancel"></li>
-                            <li class="active"><a href="order.aspx">purchase</a></li>
-                        </ul>
-                        <div class="clearfix"> </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="price">
         <div class="container">
             <h4 class="tz-title-4 tzcolor-blue">
@@ -192,6 +130,7 @@
                         <li><b>TOTAL AMOUNT</b></li>
                     </ul>
                 </div>
+                
                 <div class="col-md-6">
                     <ul class="list_3">
                         <li><b id="plan3">BUSINESS PLAN</b></li>
@@ -206,42 +145,10 @@
 
                 <p><center>----------------------</center> </p>
                 <div class="one-fifth column" runat="server">
-                    <asp:Button runat="server" Text="PROCESS ORDER" ID="process_busorder" OnClick="process_busorder_Click"></asp:Button>
+                    <asp:Button runat="server" Text="PROCESS ORDER" ID="Button3" OnClick="process_busorder_Click"></asp:Button>
                 </div>
-                
-            </div>
-        <div id="small-dialog" class="mfp-hide">
-            <div class="pop_up">
-                <div class="payment-online-form-left">
-                    <form>
-                        <h4><span class="shipping"> </span>Shipping</h4>
-                        <ul>
-                            <li><input class="text-box-dark" type="checkbox" value="Plan" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'plan';}">10 GB Disk space</li>
-                            <li><input class="text-box-dark" type="text" value="Last Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Last Name';}"></li>
-                        </ul>
-                        <ul>
-                            <li><input class="text-box-dark" type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"></li>
-                            <li><input class="text-box-dark" type="text" value="Company Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Company Name';}"></li>
-                        </ul>
-                        <ul>
-                            <li><input class="text-box-dark" type="text" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}"></li>
-                            <li><input class="text-box-dark" type="text" value="Address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Address';}"></li>
-                            <div class="clearfix"> </div>
-                        </ul>
-                        <div class="clear"> </div>
-
-
-                        <ul class="payment-sendbtns">
-                            <li><input type="button" value="Cancel"></li>
-                            <li class="active"><a href="order.aspx">purchase</a></li>
-                        </ul>
-                        <div class="clearfix"> </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="price">
+        
         
         <div class="container">
             <h4 class="tz-title-4 tzcolor-blue">
@@ -273,40 +180,14 @@
 
                 <p><center>----------------------</center> </p>
                 <div class="one-fifth column" runat="server">
-                    <asp:Button runat="server" Text="PROCESS ORDER" ID="process_goldorder" OnClick="process_goldorder_Click"></asp:Button>
-                    </div>
-            </div>
-        <div id="small-dialog" class="mfp-hide">
-            <div class="pop_up">
-                <div class="payment-online-form-left">
-                    <form>
-                        <h4><span class="shipping"> </span>Shipping</h4>
-                        <ul>
-                            <li><input class="text-box-dark" type="checkbox" value="Plan" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'plan';}"></li>
-                            <li><input class="text-box-dark" type="text" value="Last Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Last Name';}"></li>
-                        </ul>
-                        <ul>
-                            <li><input class="text-box-dark" type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"></li>
-                            <li><input class="text-box-dark" type="text" value="Company Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Company Name';}"></li>
-                        </ul>
-                        <ul>
-                            <li><input class="text-box-dark" type="text" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}"></li>
-                            <li><input class="text-box-dark" type="text" value="Address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Address';}"></li>
-                            <div class="clearfix"> </div>
-                        </ul>
-                        <div class="clear"> </div>
-
-
-                        <ul class="payment-sendbtns">
-                            <li><input type="reset" value="Cancel"></li>
-                            <li class="active"><a href="order.aspx">purchase</a></li>
-                        </ul>
-                        <div class="clearfix"> </div>
-                    </form>
+                    <asp:Button runat="server" Text="PROCESS ORDER" ID="Button4" OnClick=" process_goldorder_Click" ></asp:Button>
+                               
+                    </div><br /><br />
                 </div>
             </div>
         </div>
-    </div><br><br>
+                </div></div></div></div>
+
     <div class="footer">
         <div class="container">
             <div class="col-md-3 box_1">

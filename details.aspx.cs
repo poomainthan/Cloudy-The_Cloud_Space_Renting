@@ -8,6 +8,8 @@ using System.Data.Sql;
 using System.Data.SqlClient;
 using System.Data;
 using System.Xml.Linq;
+using Microsoft.IdentityModel.Tokens;
+using System.Data.Common;
 
 namespace WebApplication_master_testing
 {
@@ -42,7 +44,10 @@ namespace WebApplication_master_testing
             storage_space.Text = Session["space"].ToString();
             Additional_Features.Text = Session["features"].ToString();
             Amount.Text = Session["amt"].ToString();
+           
         }
+        
+
 
         protected void web_name_TextChanged(object sender, EventArgs e)
         {
@@ -72,7 +77,8 @@ namespace WebApplication_master_testing
         protected void Unnamed4_Click(object sender, EventArgs e)
         {
             //insert//
-              string paymenet_type="";
+              string paymenet_type="".ToString();
+          
 
             if ((bool)creditcard==true)
                     {
@@ -87,7 +93,7 @@ namespace WebApplication_master_testing
                 Response.Write("<script>alert('Select payment type')</script>");
             }
             conn.Open();
-            cmd = new SqlCommand("insert into plans values('" + plan_title.Text + "','" + plan_validity.Text + "','" + storage_space.Text + "','" + Additional_Features.Text + "','" + Amount.Text + "','" + First_Name.Text + "','" + Last_Name.Text + "','" + Email.Text + "','" + Company_Name.Text + "','" + Phone.Text + "','" + Address.Text + "','" + paymenet_type + "','" + payment_info.Text + "','" + Bank_Name.Text + "')", conn);
+            cmd = new SqlCommand("insert into plans values('" + plan_id.Text + "','" + plan_title.Text + "','" + plan_validity.Text + "','" + storage_space.Text + "','" + Additional_Features.Text + "','" + Amount.Text + "','" + First_Name.Text + "','" + Last_Name.Text + "','" + Email.Text + "','" + Company_Name.Text + "','" + Phone.Text + "','" + Address.Text + "','" + paymenet_type + "','" + payment_info.Text + "','" + Bank_Name.Text + "')", conn);
             if (cmd.ExecuteNonQuery() != 0)
             {
                 Response.Write("<script>alert('Data inserted successfully')</script>");
@@ -97,7 +103,8 @@ namespace WebApplication_master_testing
                 Response.Write("<script>alert('Data inserted failure')</script>");
             }
             conn.Close();
-
+           
+           
         }
 
         protected void First_Name_TextChanged(object sender, EventArgs e)
@@ -105,10 +112,8 @@ namespace WebApplication_master_testing
 
         }
 
-        protected void web_name_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        
+       }
     }
-}
+
     

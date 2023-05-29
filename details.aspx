@@ -8,9 +8,9 @@
 		<h4 class="tz-title-4 tzcolor-blue">
             <p class="tzweight_Bold"><span class="m_1" id="Amount">PLAN<br></span>REGISTRATION</p>
             <span class="m_25">Plan id<label>*</label></span>
-            <asp:TextBox runat="server"></asp:TextBox>
+            <asp:TextBox runat="server" ID="plan_id"></asp:TextBox>
             <span class="m_25">User id<label>*</label></span>
-            <asp:TextBox runat="server"></asp:TextBox>
+            <asp:TextBox runat="server" ID="user_id"></asp:TextBox>
         </h4>
         
 			<div class="col-md-6 login-right">
