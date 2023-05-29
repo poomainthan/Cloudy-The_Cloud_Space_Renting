@@ -35,12 +35,12 @@
 			</div><!-- end h_menu4 -->
 		</div>
 	</div>
-	<body>
 		<div class="about">
 			<div class="container">
 				<h1>Blog<span class="m_1"><br>Center</span></h1>
 			</div>
 		</div>
+	<form id="form1" runat="server">
 		<div class="about_grid">
 			<div class="container">
 				<h4 class="tz-title-4 tzcolor-blue">
@@ -52,51 +52,40 @@
 			<p class="tzweight_Bold"><span class="m_20">For Our Customers</span></p>
 		</h4>
 		<p>Give your feedback</p>
-		<form>
-			<div>
+			<div>	
 				<span class="m_25">Name<label>*</label></span>
-				<input type="text">
+				<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>	
 			</div>
 			<div>
 				<span class="m_25">Service Name<label>*</label></span>
-				<input type="text">
+				 <asp:TextBox runat="server"></asp:TextBox>
 			</div>
 			<div>
 				<span class="m_25">Email<label>*</label></span>
-				<input type="text">
+               <asp:TextBox runat="server"></asp:TextBox>
 			</div>
 			<div>
 				<span class="m_25">Comment<label>*</label></span>
-				<input type="text">
-			</div>
+                <asp:TextBox ID="TextBox2" runat="server" OnTextChanged="TextBox2_TextChanged"></asp:TextBox>	
+			</div><br><br>
 			<div>
 				<span class="m_25">
 					Rating Status
-					<select>
-						<option>Select here</option>
-						<option>Excellent</option>
-						<option>Good</option>
-						<option>Bad</option>
-					</select>
+			<asp:DropDownList runat="server" OnSelectedIndexChanged="Unnamed3_SelectedIndexChanged">
+					<asp:ListItem Value="1">Excellent</asp:ListItem> 
+                            <asp:ListItem Value="2">Good</asp:ListItem> 
+                            <asp:ListItem Value="3">Bad</asp:ListItem> 
+			</asp:DropDownList>
 				</span>
-
-
-			</div>
-			<br /><br />
-
-				  <div class="one-fifth column">
-					  <a href="mailto:clodyspace12@gmail.com"></b>SendYourFeedback</b></a><br><br>
-					  <input type="submit" value="Reset"><br><br>
-				  </div>
-		</form>
-	</div>
-
-
-
+				</div><br><br>
+				  <div class="one-fifth column">  
+					  <a href="mailto:clodyspace12@gmail.com"><b>SendYourFeedback</b></a><br><br>
+                      <asp:Button runat="server" Text="Button" OnClick="Unnamed4_Click"></asp:Button>
+					   <br><br>				  
+	                </div>
+					</div>
 	<div class="clearfix"> </div>
-	</form>
-</div>
-	</div>
+				</div>
 	<div class="footer">
 		<div class="container">
 			<div class="col-md-3 box_1">
@@ -141,6 +130,7 @@
 			</div>
 		</div>
 	</div>
-</body>
-        </div>
+				</div>
+			</div>
+		</form>
 </asp:Content>

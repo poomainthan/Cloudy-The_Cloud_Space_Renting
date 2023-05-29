@@ -13,5 +13,10 @@ namespace WebApplication_master_testing
         {
 
         }
+
+        protected void web_name_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
