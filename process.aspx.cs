@@ -13,5 +13,45 @@ namespace WebApplication_master_testing
         {
 
         }
+
+        protected void process_stdorder_Click(object sender, EventArgs e)
+        {
+            Session["pname"] = "STANDARD PLAN";
+            Session["validity"] = "1 YEAR";
+            Session["space"] = "10 GB DISKSPACE";
+            Session["features"] = "1 TB FREE BACKUP";
+            Session["amt"] = "600";
+            Response.Redirect("details.aspx");
+        }
+
+        protected void process_advanceorder_Click(object sender, EventArgs e)
+        {
+            Session["pname"] = "STANDARD PLAN";
+            Session["validity"] = "1 YEAR";
+            Session["space"] = "10 GB DISKSPACE";
+            Session["features"] = "1 TB FREE BACKUP";
+            Session["amt"] = "600";
+            Response.Redirect("details.aspx");
+        }
+
+        protected void process_goldorder_Click(object sender, EventArgs e)
+        {
+            Session["pname"] = "GOLD PLAN";
+            Session["validity"] = "1 YEAR";
+            Session["space"] = "10 GB DISKSPACE";
+            Session["features"] = "1 TB FREE BACKUP";
+            Session["amt"] = "900";
+            Response.Redirect("details.aspx");
+        }
+
+        protected void process_busorder_Click(object sender, EventArgs e)
+        {
+            Session["pname"] = "STANDARD PLAN";
+            Session["validity"] = "1 YEAR";
+            Session["space"] = "10 GB DISKSPACE";
+            Session["features"] = "1 TB FREE BACKUP";
+            Session["amt"] = "600";
+            Response.Redirect("details.aspx");
+        }
     }
 }

@@ -35,15 +35,18 @@
             </div><!-- end h_menu4 -->
         </div>
     </div>
+   <form id="form2" runat="server">
     <div class="about">
         <div class="container">
             <h1>process<span class="m_1"><br>your order</span></h1>
         </div>
     </div>
     <div class="price">
+    
         <div class="container">
             <h4 class="tz-title-4 tzcolor-blue">
             </h4>
+        
            
             <div class="new_domain">
                 <p><center><img src="images/splan.jpg" alt="" / width="500" height="100"></center></p><br><br>
@@ -53,23 +56,25 @@
                         <li><b>PLAN VALIDITY</b></li>
                         <li><b>STORAGE SPACE</b></li>
                         <li><b>ADDITIONAL FEATURES</b></li>
-
+                        <li><b>TOTAL AMOUNT</b></li>
                     </ul>
                 </div>
                 <div class="col-md-6">
                     <ul class="list_3">
-                        <li><b>STANDARD PLAN</b></li>
-                        <li><b>FROM:</b></li>
-                        <li><b>10GB DISK SPACE</b></li>
-                        <li><b>1 TB Bandwidth,Free daily backups.</b></li>
-                        <li><b>₹600</b></li>
+                        <li><b id="plan1">STANDARD PLAN</b></li>
+                        <li><b id="VALIDITY1">1 YEAR</b></li>
+                        <li><b id="SPACE1">10GB DISK SPACE</b></li>
+                        <li><b id="FEATURE1">1 TB Bandwidth,Free daily backups.</b></li>
+                        <li><b id="AMT1">₹600</b></li>
                     </ul>
                 </div><br><br>
 
 
                 <p><center>----------------------</center> </p>
-
-                <a class="popup-with-zoom-anim process-btn" href="details.aspx">Process order</a>
+                  <div class="one-fifth column" runat="server">
+                    <center><asp:Button runat="server" Text="PROCESS ORDER" ID="process_stdorder" OnClick="process_stdorder_Click"></asp:Button></center>
+                        </div>
+              
             </div>
             <div id="small-dialog" class="mfp-hide">
                 <div class="pop_up">
@@ -103,6 +108,7 @@
                 </div>
             </div>
         </div>
+        </div>
     <div class="price">
         <div class="container">
             <h4 class="tz-title-4 tzcolor-blue">
@@ -119,23 +125,25 @@
 
                     </ul>
                 </div>
+                
+                
                 <div class="col-md-6">
                     <ul class="list_3">
-                        <li><b>ADVANCED PLAN</b></li>
-                        <li><b>FROM:</b></li>
-                        <li><b>10GB DISK SPACE</b></li>
-                        <li><b>Free Ddos,Free daily backups.</b></li>
-                        <li><b>₹700</b></li>
+                        <li><b id="plan2">ADVANCED PLAN</b></li>
+                        <li><b id="VALIDITY2">1 YEAR</b></li>
+                        <li><b id="SPACE2">10GB DISK SPACE</b></li>
+                        <li><b id="FEATURE2">Free Ddos,Free daily backups.</b></li>
+                        <li><b id="AMT2">₹700</b></li>
 
                     </ul>
                 </div><br><br>
 
 
                 <p><center>----------------------</center> </p>
-                
-
-                <a class="popup-with-zoom-anim process2-btn" href="details.aspx">Process order</a>
             </div>
+            <div class="one-fifth column" runat="server">
+                <asp:Button runat="server" Text="process order" ID="process_advanceorder" OnClick="process_advanceorder_Click"></asp:Button>
+                </div>
         <div id="small-dialog" class="mfp-hide">
             <div class="pop_up">
                 <div class="payment-online-form-left">
@@ -172,6 +180,7 @@
             <h4 class="tz-title-4 tzcolor-blue">
             </h4>
             
+            
             <div class="new_domain">
                 <p><center><img src="images/bplan.jpg" alt="" / width="500" height="100"></center></p><br><br>
                 <div class="col-md-6">
@@ -185,19 +194,21 @@
                 </div>
                 <div class="col-md-6">
                     <ul class="list_3">
-                        <li><b>BUSINESS PLAN</b></li>
-                        <li><b>FROM:</b></li>
-                        <li><b>10GB DISK SPACE</b></li>
-                        <li><b>Managed hosting,Free Ddos.</b></li>
-                        <li><b>₹800</b></li>
+                        <li><b id="plan3">BUSINESS PLAN</b></li>
+                        <li><b id="VALIDITY4">1 YEAR</b></li>
+                        <li><b id="SPACE3">10GB DISK SPACE</b></li>
+                        <li><b id="FEATURE3">Managed hosting,Free Ddos.</b></li>
+                        <li><b id="AMT4">₹800</b></li>
 
                     </ul>
                 </div><br><br>
 
 
                 <p><center>----------------------</center> </p>
-
-                <a class="popup-with-zoom-anim process3-btn" href="details.aspx">Process order</a>
+                <div class="one-fifth column" runat="server">
+                    <asp:Button runat="server" Text="PROCESS ORDER" ID="process_busorder" OnClick="process_busorder_Click"></asp:Button>
+                </div>
+                
             </div>
         <div id="small-dialog" class="mfp-hide">
             <div class="pop_up">
@@ -231,9 +242,11 @@
         </div>
     </div>
     <div class="price">
+        
         <div class="container">
             <h4 class="tz-title-4 tzcolor-blue">
             </h4>
+           
             <div class="new_domain">
                 <p><center><img src="images/Gplan.jpg" alt="" / width="700" height="100"></center></p><br><br>
                 <div class="col-md-6">
@@ -248,10 +261,10 @@
                 </div>
                 <div class="col-md-6">
                     <ul class="list_3">
-                        <li><b>GOLD PLAN</b></li>
-                        <li><b>FROM:</b></li>
-                        <li><b>10GB DISK SPACE</b></li>
-                        <li><b>1TB Bandwidth,Managed hosting,Free Ddos.</b></li>
+                        <li><b id="plan4">GOLD PLAN</b></li>
+                        <li><b>1 YEAR</b></li>
+                        <li><b id="SPACE4">10GB DISK SPACE</b></li>
+                        <li><b id="FEATURE4">1TB Bandwidth,Managed hosting,Free Ddos.</b></li>
                         <li><b>₹900</b></li>
 
                     </ul>
@@ -259,7 +272,9 @@
 
 
                 <p><center>----------------------</center> </p>
-                <a class="popup-with-zoom-anim process4-btn" href="details.aspx">Process order</a>
+                <div class="one-fifth column" runat="server">
+                    <asp:Button runat="server" Text="PROCESS ORDER" ID="process_goldorder" OnClick="process_goldorder_Click"></asp:Button>
+                    </div>
             </div>
         <div id="small-dialog" class="mfp-hide">
             <div class="pop_up">
@@ -267,7 +282,7 @@
                     <form>
                         <h4><span class="shipping"> </span>Shipping</h4>
                         <ul>
-                            <li><input class="text-box-dark" type="checkbox" value="Plan" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'plan';}">10 GB Disk space</li>
+                            <li><input class="text-box-dark" type="checkbox" value="Plan" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'plan';}"></li>
                             <li><input class="text-box-dark" type="text" value="Last Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Last Name';}"></li>
                         </ul>
                         <ul>
@@ -336,9 +351,7 @@
             </div>
         </div>
     </div>
+        </form>
 
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-</asp:Content>
-<asp:Content ID="Content4" ContentPlaceHolderID="footer" runat="server">
-</asp:Content>
+

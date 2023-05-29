@@ -3,81 +3,96 @@
     
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="payment-online-form-left">
-         <div class="container">
-            <h4 class="tz-title-4 tzcolor-blue">
-            </h4>
-           
-            <div class="new_domain">
-                <p><center><b>DETAILS</b></center></p>
-          
-                <div class="col-md-6">
-                    <ul class="list_3">
-                        <li><b>PLAN TITLE</b></li>
-                        <li><b>PLAN VALIDITY</b></li>
-                        <li><b>STORAGE SPACE</b></li>
-                        <li><b>ADDITIONAL FEATURES</b></li>
+<form id="form1" runat="server">
+	<div class="container">
+		<h4 class="tz-title-4 tzcolor-blue">
+            <p class="tzweight_Bold"><span class="m_1" id="Amount">PLAN<br></span>REGISTRATION</p>
+            <span class="m_25">Plan id<label>*</label></span>
+            <asp:TextBox runat="server"></asp:TextBox>
+            <span class="m_25">User id<label>*</label></span>
+            <asp:TextBox runat="server"></asp:TextBox>
+        </h4>
+        
+			<div class="col-md-6 login-right">
+					<p class="tzweight_Bold"><span class="m_20">For Our Customers</span></p>
+			
+					<div>
+						<span class="m_25">Plan Name<label>*</label></span>
+                        <asp:TextBox runat="server" ID="plan_title" OnTextChanged="web_name_TextChanged"></asp:TextBox>
+					</div>
+					<div>
+						<span class="m_25">Plan validity<label>*</label></span>
+                        <asp:TextBox runat="server" ID="plan_validity" OnTextChanged="web_tag_TextChanged"></asp:TextBox>
+							</div>
+					<div>
+						<span class="m_25">Storage space<label>*</label></span><asp:TextBox runat="server" OnTextChanged="companyname_TextChanged" ID="storage_space"></asp:TextBox>
 
-                    </ul>
+                    </div>
+					<div>
+						<span class="m_25">Additional features<label>*</label></span>
+                        <asp:TextBox runat="server" ID="Additional_Features" OnTextChanged="sitesize_TextChanged"></asp:TextBox>
+					</div>
+                <div>
+						<span class="m_25">Amount<label>*</label></span><asp:TextBox runat="server" ID="Amount"></asp:TextBox>
+                      
+					</div>
                 </div>
-                <div class="col-md-6">
-                    <ul class="list_3">
-                        <li><input type="textbox" /></li>
-                         <li><input type="textbox" /></li>
-                         <li><input type="textbox" /></li>
-                         <li><input type="textbox" /></li>
-                    </ul>
-                </div>
-											<form>
+        </div>
+      <div class="payment-online-form-left">
+                <div class="col-md-7">  
 												<h4><b><span class="shipping"> </span>Shipping</b></h4>
-												<ul>
-													<li><input class="text-box-dark" type="text" value="Frist Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Frist Name';}"></li>
-													<li><input class="text-box-dark" type="text" value="Last Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Last Name';}"></li>
+												<ul >
+													<li>
+                                                        <asp:TextBox runat="server" ID="First_Name" OnTextChanged="First_Name_TextChanged">First name</asp:TextBox></li>
+                                                    <li>
+                                                        <asp:TextBox runat="server" ID="Last_Name">Last Name</asp:TextBox></li>
 												</ul>
 												<ul>
-													<li><input class="text-box-dark" type="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"></li>
-													<li><input class="text-box-dark" type="text" value="Company Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Company Name';}"></li>
+                                                    <li>
+                                                        <asp:TextBox ID="Email" runat="server">Email</asp:TextBox></li>
+                                                    <li>
+                                                        <asp:TextBox ID="Company_Name" runat="server">Company name</asp:TextBox></li>
 												</ul>
 												<ul>
-													<li><input class="text-box-dark" type="text" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}"></li>
-													<li><input class="text-box-dark" type="text" value="Address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Address';}"></li>
+                                                   <li> <asp:TextBox ID="Phone" runat="server">Phone no</asp:TextBox></li>
+                                                   <li> <asp:TextBox ID="Address" runat="server">Address</asp:TextBox></li>
+												</ul>
 													<div class="clearfix"> </div>
-												</ul>
+
 												<div class="clear"> </div>
 
 
 												
 												<div class="clearfix"> </div>
-											</form>
-										</div>
-	<div class="payment-online-form-left">
-                    <form>
+                </div>
+          </div>
+	
+        <div class="col-md-7"></div>
+                     <div class="payment-online-form-left">
                         <h4><b>PAYMENTS</b></h4>
                         <ul>
-                            <li><input name="value" value="credit card" id="credit card" type="radio">CREDIT CARD</li>
-                            <li><input  name="value" value="VISA" id="visa" type="radio">VISA</li>
+                            <li><input name="value" value="credit card" id="creditcard" type="radio">CREDIT CARD</li>
+                            <li><input  name="value" value="ONLINE PAYMENT" id="onlinepayment" type="radio">ONLINE PAYAMENT</li>
                         </ul>
-                        <p><b><u>ONLINE PAYMENTS</u></b></p>
-                        <ul>
-                           <li><input  name="value" value="PHONE PAY" id="phonepay" type="radio">PHONE PAY</li>
-                            <li><input  name="value"  value="GPAY" id="gpay" type="radio">GPAY</li>
-                            <li><input    name="value" value="PAYTM" id="paytm" type="radio">PAYTM</li>
-                        </ul>
-                        <ul>
-                            <li><input class="text-box-dark" type="text" value="UPI ID" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'UPI ID';}"></li>
-                            <li><input class="text-box-dark" type="text" value="BANK NAME" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'BANK NAME';}"></li>
-                            <div class="clearfix"> </div>
-                        </ul>
+                       <ul>
+                           <li>
+                               <asp:TextBox runat="server" ID="payment_info">UPI ID</asp:TextBox></li>
+                           <li><asp:TextBox runat="server" ID="Bank_Name">Bank name</asp:TextBox> </li>
+                       </ul>
                         <div class="clear"> </div>
 
-
+                        </div>
                         <ul class="payment-sendbtns">
-                            <li><input type="reset" value="Cancel"></li>
+                            
+                            <li>
+                                <asp:Button runat="server" Text="Submit" OnClick="Unnamed4_Click"></asp:Button></li>
                             <li class="active"><a href="order.aspx">purchase</a></li>
                         </ul>
-                        <div class="clearfix"> </div>
-                    </form>
-                </div>
+                        <div class="clearfix">
+                            </div>
+    
+    </form>
+    
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
 </asp:Content>
