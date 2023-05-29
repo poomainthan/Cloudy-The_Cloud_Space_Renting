@@ -79,6 +79,7 @@
 		</div>
      </div>
 </div>
+	<form id="form1" runat="server">
 <div class="about_grid1">
 	<div class="container">
 	        <h4 class="tz-title-4 tzcolor-blue">
@@ -124,9 +125,7 @@
 											</form>
 										</div>
 						  			</div>
-		
 					</div>
-
 		     </div>
 			 <div class="col-md-3 thumb_2">
 				 <div class="pricing-table-grid plan_box">
@@ -138,9 +137,8 @@
 						 <li><a href="#">Free DDoS Protection</a></li>
 						 <li><a href="#">Free Daily Backups</a></li>
 					 </ul>
-				 </div>
-
-				 <a class="popup-with-zoom-anim order-btn" href="process.aspx">SUBSCRIPTION</a>
+				 </div>	 <br /><br />
+				
 			 </div>	
 	         <div class="col-md-3 thumb_2">
 							<div class="pricing-table-grid plan_box">
@@ -152,7 +150,12 @@
 									<li><a href="#">Free DDoS Protection</a></li>
 									<li><a href="#">Managed Hosting</a></li>
 								</ul>
-							</div>
+							</div><br /><br />
+				  <div class="one-fifth column" runat="server">
+					 <ul>
+					<li><b><a href="process.aspx">SUBSCRIPTION</a></b></li>
+						 </ul>
+				</div>	 
 		    </div>
 	        <div class="col-md-3 thumb_2">
 							<div class="pricing-table-grid plan_box">
@@ -170,6 +173,7 @@
 		    <div class="clearfix"> </div>						
 	 </div>
 </div>
+		
 <div class="domain">
 	  <div class="container">
 		              <form class="search-form domain-search">
@@ -178,7 +182,7 @@
 			                       	   <h2><span class="m_1">Sign Up Your</span><br>Newsletter</h2>
 			                       </div>
                                 	<div class="three-fifth searchbar column first">
-                                    	<input type="text" class="text" value="Enter your domain name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your domain name';}">               
+                                        <asp:TextBox runat="server" OnTextChanged="Unnamed1_TextChanged">Enter your domain</asp:TextBox>     
                                     </div>
 									<div class="one-fifth col_2 ">
 										<br/>
@@ -188,4 +192,6 @@
                  </form>
         </div>
 </div>
+		</form>
+	
 </asp:Content>
