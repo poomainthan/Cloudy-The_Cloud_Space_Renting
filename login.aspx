@@ -58,17 +58,19 @@
 				<form>
 				  <div>
 					<span class="m_25">Email Address<label>*</label></span><asp:TextBox runat="server" ID="emailid" ></asp:TextBox>
+					  
 					 
 				  </div>
 				  <div>
 					<span class="m_25">Password<label>*</label></span><asp:TextBox runat="server" ID="passd" ></asp:TextBox>
+					  
 					 
 				  </div>
 					
 					  <a class="forgot" href="#"><u>Forgot Your Password?</u></a><br><br>
 					  <p class="active"><b><a href=""></a></b></p>
 					  <center><i>
-					  <asp:Label ID="loginerrormsg" runat="server" Text="Invalid user credentials & try again"></asp:Label></center></i>
+                          <asp:Label ID="loginerrormsg" runat="server" Text="Invalid user credentials & try again" ForeColor="#FF3300"></asp:Label></center></i>
 					  <center>
                           <asp:Button ID="loginbutton" runat="server" Text="Login" OnClick="loginbutton_Click"></asp:Button>
 					  </center>

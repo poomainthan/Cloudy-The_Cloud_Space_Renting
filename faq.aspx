@@ -147,8 +147,8 @@
 				</h4>
 				<form>
 					<div class="form_list1">
-						<input type="text" class="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
-						<input type="text" class="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" style="margin-left:2%">
+						<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+						<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
 					</div>
 					<div class="form_list2">
 						<input type="text" class="text" value="Subject" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}">

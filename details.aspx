@@ -12,23 +12,37 @@
                 <p><center><b>DETAILS</b></center></p>
           
                 <div class="col-md-6">
+                   
                     <ul class="list_3">
-                        <li><b>PLAN TITLE</b></li>
-                        <li><b>PLAN VALIDITY</b></li>
-                        <li><b>STORAGE SPACE</b></li>
-                        <li><b>ADDITIONAL FEATURES</b></li>
-
-                    </ul>
+                       <div class="about_grid">
+	<div class="container">
+		<h4 class="tz-title-4 tzcolor-blue">
+            <p class="tzweight_Bold"><span class="m_1">Register<br></span>Domain</p>
+        </h4>
+			<div class="col-md-6 login-right">
+					<p class="tzweight_Bold"><span class="m_20">For Our Customers</span></p>
+				<p>Give your details</p>	
+					<div>
+						<span class="m_25">Web Name<label>*</label></span>
+                        <asp:TextBox runat="server" ID="web_name" OnTextChanged="web_name_TextChanged"></asp:TextBox>
+					</div>
+					<div>
+						<span class="m_25">Web Tag<label>*</label></span>
+                        <asp:TextBox runat="server" ID="web_tag" OnTextChanged="web_tag_TextChanged"></asp:TextBox>
+							</div>
+					<div>
+						<span class="m_25">Company Name<label>*</label></span><asp:TextBox runat="server" ID="companyname" OnTextChanged="companyname_TextChanged"></asp:TextBox>
+						
+					</div>
+					<div>
+						<span class="m_25">Site size<label>*</label></span>
+                        <asp:TextBox runat="server" ID="sitesize" OnTextChanged="sitesize_TextChanged"></asp:TextBox>
+					</div>
                 </div>
-                <div class="col-md-6">
-                    <ul class="list_3">
-                        <li><input type="textbox" /></li>
-                         <li><input type="textbox" /></li>
-                         <li><input type="textbox" /></li>
-                         <li><input type="textbox" /></li>
-                    </ul>
-                </div>
+        </div>
+                <div class="col-md-7">
 											<form>
+                                               
 												<h4><b><span class="shipping"> </span>Shipping</b></h4>
 												<ul>
 													<li><input class="text-box-dark" type="text" value="Frist Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Frist Name';}"></li>
@@ -49,8 +63,10 @@
 												
 												<div class="clearfix"> </div>
 											</form>
-										</div>
-	<div class="payment-online-form-left">
+										
+                </div>
+	<div class="payment-online-form-left" >
+        <div class="col-md-7"></div>
                     <form>
                         <h4><b>PAYMENTS</b></h4>
                         <ul>
@@ -70,7 +86,7 @@
                         </ul>
                         <div class="clear"> </div>
 
-
+                        </div>
                         <ul class="payment-sendbtns">
                             <li><input type="reset" value="Cancel"></li>
                             <li class="active"><a href="order.aspx">purchase</a></li>
@@ -78,6 +94,7 @@
                         <div class="clearfix"> </div>
                     </form>
                 </div>
+             </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
 </asp:Content>
