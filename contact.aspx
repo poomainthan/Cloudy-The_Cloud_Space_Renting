@@ -11,8 +11,7 @@
 			<div class="cssmenu">
 					<ul>
 						<li><a href="mailto:clodyspace12@gmail.com">info(at)cloudyspace.com</a></li> 
-						<li class="active"><a href="login.aspx">Log In</a></li> 
-						<li><a href="register.aspx">Register</a></li>
+						
 					</ul>
 			</div>
 			<div class="clearfix"> </div>
@@ -84,19 +83,7 @@
 					<div class="clearfix"></div>
 				</div>
 			</div>
-			<div class="col-md-6 contact_right">
-				<h4 class="tz-title-4 tzcolor-blue">
-					<p class="tzweight_Bold"><span class="m_1">Contact<br></span>Form</p>
-				</h4>
 			
-					<input type="text" class="text"name="name" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
-					<input type="text" class="text" name="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
-					<input type="text" class="text" nzme="sub" value="Subject" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}">
-					<textarea value="Comment" name="comment" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Comment</textarea>
-					<input type="submit" value="Submit"> 
-				</form>
-		</form>
-	</div>
 			<div class="clearfix"> </div>
 	</div>
 </div>

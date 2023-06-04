@@ -16,42 +16,46 @@ namespace WebApplication_master_testing
 
         protected void process_stdorder_Click(object sender, EventArgs e)
         {
+            Session["planid"] = "1";
             Session["pname"] = "STANDARD PLAN";
             Session["validity"] = "1 YEAR";
             Session["space"] = "10 GB DISKSPACE";
-            Session["features"] = "1 TB FREE BACKUP";
-            Session["amt"] = "600";
-            Response.Redirect("details.aspx");
+            Session["features"] = "1 GB FREE BACKUP";
+            Session["amt"] = "₹ 600";
+            Response.Redirect("domain.aspx");
         }
 
         protected void process_advanceorder_Click(object sender, EventArgs e)
         {
+            Session["planid"] = "2";
             Session["pname"] = "ADVANCED PLAN";
             Session["validity"] = "1 YEAR";
             Session["space"] = "12 GB DISKSPACE";
-            Session["features"] = "1 TB BANDWIDTH, FREE BACKUPS";
-            Session["amt"] = "700";
-            Response.Redirect("details.aspx");
+            Session["features"] = "HIGH BANDWIDTH, FREE BACKUPS";
+            Session["amt"] = "₹ 700";
+            Response.Redirect("domain.aspx");
         }
 
         protected void process_goldorder_Click(object sender, EventArgs e)
         {
+            Session["planid"] = "3";
             Session["pname"] = "GOLD PLAN";
             Session["validity"] = "1 YEAR";
             Session["space"] = "14 GB DISKSPACE";
             Session["features"] = "1 TB FREE BACKUP";
-            Session["amt"] = "900";
-            Response.Redirect("details.aspx");
+            Session["amt"] = "₹ 900";
+            Response.Redirect("domain.aspx");
         }
 
         protected void process_busorder_Click(object sender, EventArgs e)
         {
-            Session["pname"] = "";
+            Session["planid"] = "4";
+            Session["pname"] = "BUSINESS PLAN";
             Session["validity"] = "1 YEAR";
             Session["space"] = "11 GB DISKSPACE";
             Session["features"] = "1 TB FREE BACKUP";
-            Session["amt"] = "800";
-            Response.Redirect("details.aspx");
+            Session["amt"] = "₹ 800";
+            Response.Redirect("domain.aspx");
         }
     }
 }

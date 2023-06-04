@@ -11,8 +11,7 @@
                 <div class="cssmenu">
                     <ul>
                         <li><a href="mailto:clodyspace12@gmail.com">info(at)cloudyspace.com</a></li>
-                        <li class="active"><a href="login.aspx">Log In</a></li>
-                        <li><a href="register.aspx">Register</a></li>
+                        
                     </ul>
                 </div>
                 <div class="clearfix"> </div>
@@ -21,7 +20,7 @@
                 <!-- start h_menu4 -->
                 <a class="toggleMenu" href="#">Menu</a>
                 <ul class="nav">
-                    <li class="active"><a href="index.aspx">Home</a></li>
+                    <li><a href="index.aspx">Home</a></li>
                     <li><a href="about.aspx">About Us</a></li>
                     <li><a href="service.aspx">Service</a></li>
                     <li><a href="plans.aspx">Plans</a></li>
@@ -188,49 +187,6 @@
         </div>
                 </div></div></div></div>
 
-    <div class="footer">
-        <div class="container">
-            <div class="col-md-3 box_1">
-                <img src="images/cloudysp.png" alt="" / width="50" height="50"><p>CLOUDY SPACE</p>
-            </div>
-            <div class="col-md-3 box_2">
-                <h4>Quick Links</h4>
-                <ul class="list_2">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Plans</a></li>
-                    <li><a href="#">Domains</a></li>
-                </ul>
-                <ul class="list_2">
-                    <li><a href="#">Faq</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <div class="clearfix"> </div>
-            </div>
-            <div class="col-md-3 box_2">
-                <h4>Contact Us</h4>
-                <address class="address">
-                    <dl>
-                        <dt></dt>
-                        <dd>Address : <span>Kannampalayam</span></dd>
-                        <dd>E-mail : <a href="mailto@cloudyspace@">info(at)cloudyspace.com</a></dd>
-                        <dd>Call : <span> +91 9345001254</span></dd>
-                    </dl>
-                </address>
-            </div>
-            <div class="col-md-3 box_2">
-                <h4>Social Media</h4>
-                <ul class="footer_social">
-                    <li><a href=""> <i class="fb"> </i> </a></li>
-                    <li><a href=""><i class="tw"> </i> </a></li>
-                    <li><a href=""><i class="linkedin"> </i> </a></li>
-                    <li><a href=""><i class="google"> </i> </a></li>
-                </ul>
-            </div>
-        </div>
     </div>
         </form>
 

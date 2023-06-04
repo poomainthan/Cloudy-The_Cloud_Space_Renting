@@ -1,39 +1,37 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Data.Sql;
-using System.Data.SqlClient;
-using System.Data;
 
 namespace WebApplication_master_testing
 {
-    public partial class WebForm10 : System.Web.UI.Page
+    public partial class adminlogin : System.Web.UI.Page
     {
-        SqlConnection con;
         protected void Page_Load(object sender, EventArgs e)
         {
             try
             {
-              
+
                 //Response.Write("<script>alert('welcome to login page')</script>");
-                loginerrormsg.Visible=false;
+                loginerror.Visible = false;
             }
-            catch {
-                
+            catch
+            {
+
             }
-            
-                
         }
-        protected void loginbutton_Click(object sender, EventArgs e)
+
+        protected void btn_Login_Click(object sender, EventArgs e)
         {
             try
             {
                 SqlConnection con = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = ""C:\db\cloud storing.mdf""; Integrated Security = True; Connect Timeout = 30");
                 con.Open();
-                SqlCommand cmd = new SqlCommand("select  * from register where emailid='" + emailid.Text + "' and passd = '" + passd.Text + "'", con);
+                SqlCommand cmd = new SqlCommand("select  * from admincredentials where id='" + adminid.Text + "' and adminpass = '" + adminpass.Text + "'", con);
                 cmd.ExecuteNonQuery();
                 SqlDataAdapter sda = new SqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
@@ -42,19 +40,24 @@ namespace WebApplication_master_testing
                 if (ds.Tables[0].Rows.Count > 0)
                 {
 
-                    Response.Redirect("plans.aspx");
+                    Response.Redirect("adminpage.aspx");
                     Response.Write("<script>alert('successfully login')</script>");
                 }
                 else
                 {
                     Response.Write("<script>('username or password may incorrect try again')</script>");
-                    loginerrormsg.Visible = true;
+                    loginerror.Visible = true;
                 }
             }
             catch (Exception ex)
             {
                 Response.Write(ex);
             }
+        }
+
+        protected void btn_cancel_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("index.aspx");
         }
     }
 }

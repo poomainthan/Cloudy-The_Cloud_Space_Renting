@@ -50,6 +50,7 @@
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Support</a></li>
                     <li><a href="#">Contact</a></li>
+                    <li><a href="adminlogin.aspx">Admin</a></li>
                 </ul>
                 <div class="clearfix"> </div>
             </div>

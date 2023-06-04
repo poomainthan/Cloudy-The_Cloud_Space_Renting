@@ -6,7 +6,7 @@
         <div class="container">
             <div class="header_top">
                 <div class="logo">
-                    <a href="index.html"><img src="images/cloudysp.png" alt="" / width="50" height="50"><p>CLOUDY SPACE</p></a>
+                    <a href="index.aspx"><img src="images/cloudysp.png" alt="" / width="50" height="50"><p>CLOUDY SPACE</p></a>
                 </div>
                 <div class="clearfix"> </div>
             </div>
@@ -14,7 +14,7 @@
                 <!-- start h_menu4 -->
                 <a class="toggleMenu" href="#">Menu</a>
                 <ul class="nav">
-                    <li class="active"><center><a href="order.html">GET YOUR RECIEPT</a></center></li>
+                    <li class="active"><center><a href="order.aspx">GET YOUR RECIEPT</a></center></li>
                 </ul>
                 <script type="text/javascript" src="js/nav.js"></script>
             </div><!-- end h_menu4 -->
@@ -36,103 +36,83 @@
 
                                     <p class="lead fw-bold mb-5" style="color: #e74c3c;">Purchase Reciept</p>
 
-                                    <div class="row">
+                                    <div class="container">
                                         <div class="col mb-3">
-                                            <p class="small text-muted mb-1">Date</p>
-                                            <p class="small text-muted mb-1">From:</p>
-                                            <p><input type="text"></p>
-                                            <p class="small text-muted mb-1">To:</p>
-                                            <p><input type="text"></p>
+                                            <form id="form1" runat="server">
+                                            <p class="small text-muted mb-1">Plan ID:</p>
+                                            <p><asp:TextBox ID="TextBox4" runat="server" ReadOnly="true"></asp:TextBox></p>
                                         </div>
                                         <div class="col mb-3">
-                                            <p class="small text-muted mb-1">Order No.</p>
-                                            <p><input type="text"></p>
+                                            <p class="small text-muted mb-1">Plan name:</p>
+                                            <p><asp:TextBox ID="TextBox5" runat="server" ReadOnly="true"></asp:TextBox></p>
+                                        </div>
+                                        <div class="col mb-3">
+                                            <p class="small text-muted mb-1"> Validity:</p>
+                                            <p><asp:TextBox ID="TextBox6" runat="server" ReadOnly="true"></asp:TextBox></p>
+                                        </div>
+                                        <div class="col mb-3">
+                                            <p class="small text-muted mb-1">Reg Domain:</p>
+                                            <p><asp:TextBox ID="TextBox10" runat="server" ReadOnly="true"></asp:TextBox></p>
+                                        </div>
+                                        <div class="col mb-3">
+                                            <p class="small text-muted mb-1">UserName:</p>
+                                            <p><asp:TextBox ID="TextBox7" runat="server" ReadOnly="true"></asp:TextBox></p>
+                                        </div>
+                                        <div class="col mb-3">
+                                            <p class="small text-muted mb-1">Email:</p>
+                                            <p><asp:TextBox ID="TextBox2" runat="server" ReadOnly="true"></asp:TextBox></p>
+                                        </div>
+                                        <div class="col mb-3">
+                                            <p class="small text-muted mb-1">Company Name:</p>
+                                            <p><asp:TextBox ID="TextBox3" runat="server" ReadOnly="true"></asp:TextBox></p>
+                                        </div>
+                                        <div class="col mb-3">
+                                            <p class="small text-muted mb-1">Phone:</p>
+                                            <p><asp:TextBox ID="TextBox8" runat="server" ReadOnly="true"></asp:TextBox></p>
+                                        </div>
+                                        <div class="col mb-3">
+                                            <p class="small text-muted mb-1">Address:</p>
+                                            <p><asp:TextBox ID="TextBox9" runat="server" ReadOnly="true"></asp:TextBox></p>
                                         </div>
                                     </div>
                                 </div>
-
+                                
                                     <div class="mx-n5 px-5 py-4" style="background-color: #f2f2f2;">
                                         <div class="row">
                                             <div class="col mb-3">
-                                                <p class="small text-muted mb-1">Purchased plan</p>
-                                                <p><input type="text"></p>
+                                                
                                             </div>
                                             <div class="col mb-3">
                                                 <p class="small text-muted mb-1">Amount.</p>
-                                                <p><input type="text" value="₹"></p>
+                                                <p>
+                                                    <asp:TextBox ID="TextBox1" runat="server" placeholder="₹" ReadOnly="true"></asp:TextBox></p>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col mb-3">
-                                                <p class="small text-muted mb-1">Shipping.</p>
-                                                <p><input type="text" value="₹"></p>
+                                               
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="row">
                                         <div class="col mb-3">
-                                            <p class="small text-muted mb-1">Total.</p>
-                                            <p class="lead fw-bold mb-0" style="color: #555;"><input type="text" value="₹"></p>
+                                            
                                         </div>
                                     </div>
-									<p class="active"><b><a href="domain.html">CreateDomain</a></b></p>
                                     <p class="mt-4 pt-2 mb-0">
                                         Want any help? <a href="#!" style="color: #e74c3c;">
-                                           <ul><li class="active"><a href="contact.html">please contact us</a></li></ul> 
+                                           <ul><li class="active"><a href="contact.aspx">please contact us</a></li></ul> 
                                             
                                         </a>
                                     </p>
-
+                                    </form>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="footer">
-                    <div class="container">
-                        <div class="col-md-3 box_1">
-                            <img src="images/cloudysp.png" alt="" / width="50" height="50"><p>CLOUDY SPACE</p>
-                        </div>
-                        <div class="col-md-3 box_2">
-                            <h4>Quick Links</h4>
-                            <ul class="list_2">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Service</a></li>
-                                <li><a href="#">Plans</a></li>
-                                <li><a href="#">Domains</a></li>
-                            </ul>
-                            <ul class="list_2">
-                                <li><a href="#">Faq</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Support</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                            <div class="clearfix"> </div>
-                        </div>
-                        <div class="col-md-3 box_2">
-                            <h4>Contact Us</h4>
-                            <address class="address">
-                                <dl>
-                                    <dt></dt>
-                                    <dd>Address : <span>Kannampalayam</span></dd>
-                                    <dd>E-mail : <a href="mailto@cloudyspace@">info(at)cloudyspace.com</a></dd>
-                                    <dd>Call : <span> +91 9345001254</span></dd>
-                                </dl>
-                            </address>
-                        </div>
-                        <div class="col-md-3 box_2">
-                            <h4>Social Media</h4>
-                            <ul class="footer_social">
-                                <li><a href=""> <i class="fb"> </i> </a></li>
-                                <li><a href=""><i class="tw"> </i> </a></li>
-                                <li><a href=""><i class="linkedin"> </i> </a></li>
-                                <li><a href=""><i class="google"> </i> </a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                
 </html>
             </form>
         </section>

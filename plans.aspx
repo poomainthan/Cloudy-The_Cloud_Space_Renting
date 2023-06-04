@@ -14,8 +14,7 @@
 			<div class="cssmenu">
 					<ul>
 						<li><a href="mailto:clodyspace12@gmail.com">info(at)cloudyspace.com</a></li> 
-						<li class="active"><a href="login.aspx">Log In</a></li> 
-						<li><a href="register.aspx">Register</a></li>
+						
 					</ul>
 			</div>
 			<div class="clearfix"> </div>
@@ -172,26 +171,7 @@
 		    </div>	
 		    <div class="clearfix"> </div>						
 	 </div>
-</div>
-		
-<div class="domain">
-	  <div class="container">
-		              <form class="search-form domain-search">
-			                       <div class="two-fifth signup column first">
-									   <img src="images/message.png" alt="" / width="50" height="50">
-			                       	   <h2><span class="m_1">Sign Up Your</span><br>Newsletter</h2>
-			                       </div>
-                                	<div class="three-fifth searchbar column first">
-                                        <asp:TextBox runat="server" OnTextChanged="Unnamed1_TextChanged">Enter your domain</asp:TextBox>     
-                                    </div>
-									<div class="one-fifth col_2 ">
-										<br/>
-										<p class="active"><b><a href="domainmanage.aspx">MANAGEDOMAIN</a></b></p>
-									</div>
-                                    <div class="clearfix"> </div>
-                 </form>
-        </div>
-</div>
+</div
 		</form>
 	
 </asp:Content>

@@ -13,8 +13,7 @@
 			<div class="cssmenu">
 					<ul>
 						<li><a href="mailto:clodyspace12@gmail.com">info(at)cloudyspace.com</a></li> 
-						<li class="active"><a href="login.aspx">Log In</a></li> 
-						<li><a href="register.aspx">Register</a></li>
+						
 					</ul>
 			</div>
 			<div class="clearfix"> </div>
@@ -36,7 +35,6 @@
 	      </div><!-- end h_menu4 -->
      </div>
 </div>
-	<form id="form1" runat="server">
 <div class="about">
 	 <div class="container">
 		<h1>About Us<span class="m_1"><br>What we are</span></h1>
@@ -110,23 +108,6 @@
 		</div>
 	</div>
 </div>
-<div class="domain">
-	  <div class="container">
-		              <form id="form1" runat="server">
-			                       <div class="two-fifth signup column first">
-									   <img src="images/message.png" alt="" / width="50" height="50">
-			                       	   <h2><span class="m_1">Sign Up Your</span><br>Newsletter</h2>
-			                       </div>
-                                	<div class="three-fifth searchbar column first">
-                                    	<input type="text" class="text" value="Enter your domain name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your domain name';}">               
-                                    </div>
-									<div class="one-fifth col_2 ">
-										<br/>
-											<p class="active"><b><a href="domainmanage.aspx">MANAGEDOMAIN</a></b></p>
-									</div>
-                                    <div class="clearfix"> </div>
-                      </form>
-        </div>
-</div>
-		</form>
+
+
 </asp:Content>

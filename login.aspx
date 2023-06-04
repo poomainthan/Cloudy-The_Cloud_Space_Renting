@@ -1,4 +1,4 @@
-﻿          <%@ Page Title="" Language="C#" MasterPageFile="~/cloudy.Master" AutoEventWireup="true" EnableEventValidation = "false" CodeBehind="login.aspx.cs" Inherits="WebApplication_master_testing.WebForm10" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/cloudy.Master" AutoEventWireup="true" EnableEventValidation = "false" CodeBehind="login.aspx.cs" Inherits="WebApplication_master_testing.WebForm10" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -62,12 +62,12 @@
 					 
 				  </div>
 				  <div>
-					<span class="m_25">Password<label>*</label></span><asp:TextBox runat="server" ID="passd" ></asp:TextBox>
+					<span class="m_25">Password<label>*</label></span><asp:TextBox runat="server" ID="passd"  ></asp:TextBox>
 					  
 					 
 				  </div>
 					
-					  <a class="forgot" href="#"><u>Forgot Your Password?</u></a><br><br>
+					  <a class="forgot" href="#"><u></u></a><br><br>
 					  <p class="active"><b><a href=""></a></b></p>
 					  <center><i>
                           <asp:Label ID="loginerrormsg" runat="server" Text="Invalid user credentials & try again" ForeColor="#FF3300"></asp:Label></center></i>
@@ -78,25 +78,6 @@
 			   </div>	
 		</form>
 			   <div class="clearfix"> </div>
-      </div>
-</div>
-<div class="domain">
-	  <div class="container">
-		              <form class="search-form domain-search">
-			                       <div class="two-fifth signup column first">
-									   <img src="images/message.png" alt="" / width="50" height="50">
-			                       	   <h2><span class="m_1">Sign Up Your</span><br>Newsletter</h2>
-			                       </div>
-                                	<div class="three-fifth searchbar column first">
-                                    	<input type="text" class="text" value="Enter your domain name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your domain name';}">               
-                                    </div>
-									<div class="one-fifth col_2 ">
-										<br/>
-										<p class="active"><b><a href="domainmanage.aspx">MANAGEDOMAIN</a></b></p>
-									</div> 
-                                   
-                                    <div class="clearfix"> </div>
-                     </form>
       </div>
 </div>
 </asp:Content>
