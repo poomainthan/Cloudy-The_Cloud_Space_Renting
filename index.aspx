@@ -64,7 +64,6 @@
 								<h2>reputation-based trust management</h2>
 							</div>
 						</li>
-
 					</ul>
 				</div>
 			</section>
@@ -72,51 +71,6 @@
 		</div>
 	</div>
 	<form id="form1" runat="server">
-	<div class="domain">
-		<div class="container">
-			<form class="search-form domain-search">
-				
-				<div class="two-fifth column first" runat="server">
-					<img src="images/magnifying.png" alt="" / width="50" height="50">
-					<h2><span class="m_1">search your</span><br>domain</h2>
-				</div>
-				
-				<div class="three-fifth column first" runat="server">
-                    <asp:TextBox runat="server" OnTextChanged="Unnamed1_TextChanged"></asp:TextBox>
-				</div>
-					
-				<div class="one-fifth column" runat="server">
-					<span class="selection-box">
-                        <asp:DropDownList ID="DropDownList2" runat="server" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged1">
-							<asp:ListItem Value="01">Year(0-1 year)</asp:ListItem>
-							<asp:ListItem Value="02">.com(₹700)</asp:ListItem> 
-                            <asp:ListItem Value="03">.org(₹500)</asp:ListItem> 
-                            <asp:ListItem Value="04">.info(₹450)</asp:ListItem> 
-                            <asp:ListItem Value="05">.net(₹450)</asp:ListItem>
-						</asp:DropDownList>
-					</span>
-				</div>
-				<div class="one-fifth column" runat="server">
-					<span class="selection-box">
-                        <asp:DropDownList ID="DropDownList1" runat="server" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged">
-							
-							<asp:ListItem Value="02">.com(₹700)</asp:ListItem> 
-                            <asp:ListItem Value="03">.org(₹500)</asp:ListItem> 
-                            <asp:ListItem Value="04">.info(₹450)</asp:ListItem> 
-                            <asp:ListItem Value="05">.net(₹450)</asp:ListItem> 
-						</asp:DropDownList>
-					
-					</span>
-				</div>
-					
-			<div class="one-fifth column" runat="server">
-					
-                <asp:Button runat="server" Text="SUBMIT" OnClick="Unnamed2_Click"></asp:Button>
-				</div></form>
-					
-                <div class="clearfix">
-                    </div> </div>
-	</div>
 	<div class="benefit">
 		<div class="container">
 			<h4 class="tz-title-4 tzcolor-blue">
@@ -233,26 +187,9 @@
 			</div>
 		</div>
 	</div>
-	<div class="domain">
-		<div class="container">
-			
-				
-				<div class="two-fifth signup column first" >
-					<img src="images/message.png" alt="" / width="50" height="50">
-					<h2><span class="m_1">Sign Up Your</span><br>Newsletter</h2>
-				</div>
-				<div class="three-fifth searchbar column first" runat="server">
-                    <asp:TextBox runat="server" OnTextChanged="Unnamed1_TextChanged1">Enter your domain</asp:TextBox> 
-				</div>
-				<div class="one-fifth col_2 "><br />
-			       <p class="active"><b><a href="domainmanage.aspx">MANAGEDOMAIN</a></b></p>
-				</div>
-				<div class="clearfix">
-                    </div>
-			
-		</div>
-	</div>
+		
 	</form>
+	<p class="active"><a href="adminpage.aspx">ADMIN</a></p>
 		<script>
             $(function () {
                 SyntaxHighlighter.all();

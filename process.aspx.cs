@@ -19,7 +19,7 @@ namespace WebApplication_master_testing
             Session["pname"] = "STANDARD PLAN";
             Session["validity"] = "1 YEAR";
             Session["space"] = "10 GB DISKSPACE";
-            Session["features"] = "1 TB FREE BACKUP";
+            Session["features"] = "1 GB FREE BACKUP";
             Session["amt"] = "600";
             Response.Redirect("details.aspx");
         }
@@ -29,7 +29,7 @@ namespace WebApplication_master_testing
             Session["pname"] = "ADVANCED PLAN";
             Session["validity"] = "1 YEAR";
             Session["space"] = "12 GB DISKSPACE";
-            Session["features"] = "1 TB BANDWIDTH, FREE BACKUPS";
+            Session["features"] = "HIGH BANDWIDTH, FREE BACKUPS";
             Session["amt"] = "700";
             Response.Redirect("details.aspx");
         }

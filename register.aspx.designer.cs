@@ -51,13 +51,13 @@ namespace WebApplication_master_testing
         protected global::System.Web.UI.WebControls.TextBox username;
 
         /// <summary>
-        /// password control.
+        /// passd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox password;
+        protected global::System.Web.UI.WebControls.TextBox passd;
 
         /// <summary>
         /// emailid control.

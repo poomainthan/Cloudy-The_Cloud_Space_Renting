@@ -6,7 +6,7 @@
         <div class="container">
             <div class="header_top">
                 <div class="logo">
-                    <a href="index.html"><img src="images/cloudysp.png" alt="" / width="50" height="50"><p>CLOUDY SPACE</p></a>
+                    <a href="index.aspx"><img src="images/cloudysp.png" alt="" / width="50" height="50"><p>CLOUDY SPACE</p></a>
                 </div>
                 <div class="clearfix"> </div>
             </div>
@@ -38,52 +38,56 @@
 
                                     <div class="row">
                                         <div class="col mb-3">
-                                            <p class="small text-muted mb-1">Date</p>
-                                            <p class="small text-muted mb-1">From:</p>
-                                            <p><input type="text"></p>
-                                            <p class="small text-muted mb-1">To:</p>
-                                            <p><input type="text"></p>
+                                            <form id="form1" runat="server">
+                                            <p class="small text-muted mb-1">Plan ID:</p>
+                                            <p><asp:TextBox ID="TextBox4" runat="server"></asp:TextBox></p>
                                         </div>
                                         <div class="col mb-3">
-                                            <p class="small text-muted mb-1">Order No.</p>
-                                            <p><input type="text"></p>
+                                            <p class="small text-muted mb-1">Plan name:</p>
+                                            <p><asp:TextBox ID="TextBox5" runat="server"></asp:TextBox></p>
+                                        </div>
+                                        <div class="col mb-3">
+                                            <p class="small text-muted mb-1"> Validity:</p>
+                                            <p><asp:TextBox ID="TextBox6" runat="server"></asp:TextBox></p>
+                                        </div>
+                                        <div class="col mb-3">
+                                            <p class="small text-muted mb-1">UserName:</p>
+                                            <p><asp:TextBox ID="TextBox7" runat="server"></asp:TextBox></p>
                                         </div>
                                     </div>
                                 </div>
-
+                                
                                     <div class="mx-n5 px-5 py-4" style="background-color: #f2f2f2;">
                                         <div class="row">
                                             <div class="col mb-3">
-                                                <p class="small text-muted mb-1">Purchased plan</p>
-                                                <p><input type="text"></p>
+                                                
                                             </div>
                                             <div class="col mb-3">
                                                 <p class="small text-muted mb-1">Amount.</p>
-                                                <p><input type="text" value="₹"></p>
+                                                <p>
+                                                    <asp:TextBox ID="TextBox1" runat="server" placeholder="₹"></asp:TextBox></p>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col mb-3">
-                                                <p class="small text-muted mb-1">Shipping.</p>
-                                                <p><input type="text" value="₹"></p>
+                                               
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="row">
                                         <div class="col mb-3">
-                                            <p class="small text-muted mb-1">Total.</p>
-                                            <p class="lead fw-bold mb-0" style="color: #555;"><input type="text" value="₹"></p>
+                                            
                                         </div>
                                     </div>
-									<p class="active"><b><a href="domain.html">CreateDomain</a></b></p>
+									<p class="active"><b><a href="domain.aspx">CreateDomain</a></b></p>
                                     <p class="mt-4 pt-2 mb-0">
                                         Want any help? <a href="#!" style="color: #e74c3c;">
-                                           <ul><li class="active"><a href="contact.html">please contact us</a></li></ul> 
+                                           <ul><li class="active"><a href="contact.aspx">please contact us</a></li></ul> 
                                             
                                         </a>
                                     </p>
-
+                                    </form>
                                 </div>
                             </div>
                         </div>

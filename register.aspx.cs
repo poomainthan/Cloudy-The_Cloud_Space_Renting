@@ -21,7 +21,7 @@ namespace WebApplication_master_testing
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\STUDENT\Documents\logindatabase.mdf;Integrated Security=True;Connect Timeout=30");
+            conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\db\cloud storing.mdf"";Integrated Security=True;Connect Timeout=30");
             Response.Write("<script>alert('welcome')</script>");
             try
             {
@@ -30,7 +30,7 @@ namespace WebApplication_master_testing
             }
             catch
             {
-                Response.Write("<script>alert('failure not successfully')</script>");
+                Response.Write("<script>alert('register your data')</script>");
 
             }
             conn.Close();
@@ -70,17 +70,18 @@ namespace WebApplication_master_testing
         {
             //insert//
             conn.Open();
-            cmd = new SqlCommand("insert into register values('" +fname.Text+ "','" +lname.Text+ "','" +username.Text+ "','" +password.Text+ "','" +emailid.Text+ "','" +companyname.Text+ "')", conn);
+            cmd = new SqlCommand("insert into register values('" +fname.Text+ "','" +lname.Text+ "','" +emailid.Text+ "','" + username.Text+ "','" +passd.Text+ "','" +companyname.Text+ "')", conn);
             if (cmd.ExecuteNonQuery() != 0)
             {
                 Response.Write("<script>alert('Data inserted successfully')</script>");
+                Response.Redirect("login.aspx");
             }
             else
             {
                 Response.Write("<script>alert('Data inserted failure')</script>");
-                Response.Redirect("~/login.aspx");
+                Response.Redirect("login.aspx");
             }
-            
+            conn.Close();
 
         }
     }

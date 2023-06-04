@@ -19,14 +19,13 @@ namespace WebApplication_master_testing
         SqlCommand cmd;
         SqlDataAdapter adapter;
         DataSet ds;
-        private object creditcard;
-        private object onlinepayment;
+       
 
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\STUDENT\Documents\cloud storing.mdf"";Integrated Security=True;Connect Timeout=30");
-            Response.Write("<script>alert('welcome')</script>");
+            conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\db\cloud storing.mdf"";Integrated Security=True;Connect Timeout=30");
+            Response.Write("<script>alert('Plan Selection')</script>");
             try
             {
                 conn.Open();
@@ -34,9 +33,10 @@ namespace WebApplication_master_testing
             }
             catch
             {
-                Response.Write("<script>alert('failure not successfully')</script>");
+                Response.Write("<script>alert(' not successfully')</script>");
 
             }
+
             conn.Close();
 
             plan_title.Text = Session["pname"].ToString();
@@ -44,9 +44,10 @@ namespace WebApplication_master_testing
             storage_space.Text = Session["space"].ToString();
             Additional_Features.Text = Session["features"].ToString();
             Amount.Text = Session["amt"].ToString();
-           
+
+            
         }
-        
+
 
 
         protected void web_name_TextChanged(object sender, EventArgs e)
@@ -76,44 +77,33 @@ namespace WebApplication_master_testing
 
         protected void Unnamed4_Click(object sender, EventArgs e)
         {
-            //insert//
-              string paymenet_type="".ToString();
-          
-
-            if ((bool)creditcard==true)
-                    {
-                    paymenet_type = "creditcard";
+            //insert
+                conn.Open();
+                cmd = new SqlCommand("insert into plans values('" + plan_title.Text + "','" + plan_validity.Text + "','" + storage_space.Text + "','" + Additional_Features.Text + "','" + Amount.Text + "','" + First_Name.Text + "','" + Last_Name.Text + "','" + Email.Text + "','" + Company_Name.Text + "','" + Phone.Text + "','" + Address.Text + "','"+ DropDownList1.SelectedItem.ToString() +"','" + payment_info.Text + "','" + Bank_Name.Text + "')", conn);
+                if (cmd.ExecuteNonQuery() != 0)
+                {
+                    Response.Write("<script>alert('Ordered successfully')</script>");
+                    Response.Redirect("order.aspx");
                 }
-            else if ((bool)onlinepayment == true)
-            {
-                paymenet_type = "onlinepayment";
-            }
-            else
-            {
-                Response.Write("<script>alert('Select payment type')</script>");
-            }
-            conn.Open();
-            cmd = new SqlCommand("insert into plans values('" + plan_id.Text + "','" + plan_title.Text + "','" + plan_validity.Text + "','" + storage_space.Text + "','" + Additional_Features.Text + "','" + Amount.Text + "','" + First_Name.Text + "','" + Last_Name.Text + "','" + Email.Text + "','" + Company_Name.Text + "','" + Phone.Text + "','" + Address.Text + "','" + paymenet_type + "','" + payment_info.Text + "','" + Bank_Name.Text + "')", conn);
-            if (cmd.ExecuteNonQuery() != 0)
-            {
-                Response.Write("<script>alert('Data inserted successfully')</script>");
-            }
-            else
-            {
-                Response.Write("<script>alert('Data inserted failure')</script>");
-            }
-            conn.Close();
-           
-           
-        }
+                else
+                {
+                    Response.Write("<script>alert('Order failure please refresh the webpage')</script>");
+                }
+                conn.Close();
 
-        protected void First_Name_TextChanged(object sender, EventArgs e)
-        {
 
         }
 
-        
-       }
+            protected void First_Name_TextChanged(object sender, EventArgs e)
+            {
+
+            }
+
+
     }
 
-    
+       
+}
+
+
+

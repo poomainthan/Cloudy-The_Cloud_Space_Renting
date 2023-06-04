@@ -2,6 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+        <form id="form1" runat="server">
         <div class="header">
         <div class="container">
             <div class="header_top">
@@ -35,39 +36,70 @@
             <h1>Domain<span class="m_1"><br>Management</span></h1>
         </div>
     </div>
+            <centre>
     <div class="tablecontainer">
-
-        <div class="table">
-            <div class="table-header">
-                <div class="header__item"><a id="name" class="filter__link" href="#">S.No</a></div>
-                <div class="header__item"><a id="wins" class="filter__link filter__link--number" href="#">Web name</a></div>
-                <div class="header__item"><a id="draws" class="filter__link filter__link--number" href="#">Web Tag</a></div>
-                <div class="header__item"><a id="losses" class="filter__link filter__link--number" href="#">Company name</a></div>
-                <div class="header__item"><a id="total" class="filter__link filter__link--number" href="#">Total</a></div>
-                <div class="header__item"><a id="total" class="filter__link filter__link--number" href="#">Occupied space</a></div>
-                <div class="header__item"><a id="total" class="filter__link filter__link--number" href="#">Free space</a></div>
-            </div>
-            <div class="table-content">
-                <div class="table-row">
-                    <div class="table-data">1</div>
-                    <div class="table-data">kit123.co.in</div>
-                    <div class="table-data">KIT-schooling</div>
-                    <div class="table-data">KIT</div>
-                    <div class="table-data">10GB</div>
-                    <div class="table-data">3GB</div>
-                    <div class="table-data">7GB</div>
-                </div>
-                <div class="table-row">
-                    <div class="table-data">1</div>
-                    <div class="table-data">college123.co.in</div>
-                    <div class="table-data">collegeing</div>
-                    <div class="table-data">clg</div>
-                    <div class="table-data">10GB</div>
-                    <div class="table-data">7GB</div>
-                    <div class="table-data">3GB</div>
-                </div>
-           
-            </div>
+        <div>
+            <centre>
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Plan ID" DataSourceID="staticplandata" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical" Width="312px">
+                <AlternatingRowStyle BackColor="#CCCCCC" />
+                <Columns>
+                    <asp:BoundField DataField="Plan ID" HeaderText="Plan ID" ReadOnly="True" SortExpression="Plan ID" />        
+                    <asp:BoundField DataField="Storage Space" HeaderText="Storage Space" SortExpression="Storage Space" />
+                    <asp:BoundField DataField="Server ID" HeaderText="Server ID" SortExpression="Server ID" />
+                </Columns>
+                <FooterStyle BackColor="#CCCCCC" />
+                <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
+                <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
+                <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
+                <SortedAscendingCellStyle BackColor="#F1F1F1" />
+                <SortedAscendingHeaderStyle BackColor="#808080" />
+                <SortedDescendingCellStyle BackColor="#CAC9C9" />
+                <SortedDescendingHeaderStyle BackColor="#383838" />
+            </asp:GridView>
+                </centre>
+            <asp:SqlDataSource ID="staticplandata" runat="server" ConnectionString="<%$ ConnectionStrings:cloud storingConnectionString %>" SelectCommand="SELECT * FROM [StaticPlanTable]"></asp:SqlDataSource>
         </div>
+        <br /><br />
+        <div class="clearfix"></div>
+    <div class="about_grid">
+	<div class="container">
+			<div class="col-md-6 login-right">
+					<p class="tzweight_Bold"><span class="m_20">Domain Management</span></p>
+        
+
+				<p>Give your details</p>	
+					<div>
+						<span class="m_25">Plan ID<label>*</label></span>
+                        <asp:TextBox runat="server" ID="planid" BorderColor="#0099FF"></asp:TextBox>
+					</div>
+					<div>
+						<span class="m_25">Storage Space<label>*</label></span><asp:TextBox runat="server" ID="storagespace"  BorderColor="#0099FF"></asp:TextBox>
+							</div>
+					<div>
+						<span class="m_25">Select Server<label>*</label></span>
+                        <asp:DropDownList ID="AreaDropDownList" runat="server" BorderColor="#0099FF" OnSelectedIndexChanged="AreaDropDownList_SelectedIndexChanged" AutoPostBack="True">
+                            <asp:ListItem>--Select Server--</asp:ListItem>
+                            <asp:ListItem>Server 1</asp:ListItem>
+                            <asp:ListItem>Server 2</asp:ListItem>
+                            <asp:ListItem>Server 3</asp:ListItem>
+
+                        </asp:DropDownList>
+                        
+                        <asp:TextBox ID="InputTextBox1" runat="server" AutoPostBack="True" value="SpaceURL : bit.ly/43xBz18" BorderColor="#0099FF" ReadOnly="True"></asp:TextBox>
+                        <asp:TextBox ID="InputTextBox2" runat="server" AutoPostBack="True" value="SpaceURL : bit.ly/3CbDjBn" BorderColor="#0099FF" ReadOnly="True"></asp:TextBox>
+                        <asp:TextBox ID="InputTextBox3" runat="server" AutoPostBack="True" Value="SpaceURL : bit.ly/43nDQwf" BorderColor="#0099FF" ReadOnly="True"></asp:TextBox>
+					</div>
+					<div>
+						
+					</div>
+					<br /><br />
+				    <div class="one-fifth column">
+			</div>
+			        <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Submit" />
+			<div class="clearfix"> </div>
+            
+        </div>
+</div>
     </div>
+        </form>
 </asp:Content>

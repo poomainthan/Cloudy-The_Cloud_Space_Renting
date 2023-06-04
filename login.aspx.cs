@@ -15,49 +15,45 @@ namespace WebApplication_master_testing
         SqlConnection con;
         protected void Page_Load(object sender, EventArgs e)
         {
-            loginerrormsg.Visible = false;
-            
             try
             {
               
                 Response.Write("<script>alert('welcome to login page')</script>");
+                loginerrormsg.Visible=false;
             }
-            catch { 
+            catch {
+                
             }
             
                 
         }
         protected void loginbutton_Click(object sender, EventArgs e)
         {
-            
-            
             try
             {
-                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\STUDENT\Documents\logindatabase.mdf;Integrated Security=True;Connect Timeout=30");
+                SqlConnection con = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = ""C:\db\cloud storing.mdf""; Integrated Security = True; Connect Timeout = 30");
                 con.Open();
-                SqlCommand cmd = new SqlCommand("select  * from register where emailid='" + emailid.Text + "' and password = '" + passd.Text + "'", con);
+                SqlCommand cmd = new SqlCommand("select  * from register where emailid='" + emailid.Text + "' and passd = '" + passd.Text + "'", con);
                 cmd.ExecuteNonQuery();
                 SqlDataAdapter sda = new SqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
                 sda.Fill(ds);
-               
-                if (ds.Tables[0].Rows.Count>0)
+
+                if (ds.Tables[0].Rows.Count > 0)
                 {
-               
+
                     Response.Redirect("plans.aspx");
                     Response.Write("<script>alert('successfully login)</script>");
                 }
                 else
                 {
-                    loginerrormsg.Visible=true;
+                    loginerrormsg.Visible = true;
                 }
             }
-            catch(Exception ex)
-             {
+            catch (Exception ex)
+            {
                 Response.Write(ex);
             }
-
         }
-        
     }
 }

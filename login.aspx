@@ -1,4 +1,4 @@
-﻿          <%@ Page Title="" Language="C#" MasterPageFile="~/cloudy.Master" AutoEventWireup="true" EnableEventValidation = "false" CodeBehind="login.aspx.cs" Inherits="WebApplication_master_testing.WebForm10" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/cloudy.Master" AutoEventWireup="true" EnableEventValidation = "false" CodeBehind="login.aspx.cs" Inherits="WebApplication_master_testing.WebForm10" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

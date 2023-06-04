@@ -306,7 +306,10 @@
     <Content Include="process.aspx" />
     <Content Include="domainmanage.aspx" />
     <Content Include="order.aspx" />
-    <Content Include="WebForm16.aspx" />
+    <Content Include="serverallocation.aspx" />
+    <Content Include="adminpage.aspx" />
+    <Content Include="clientallocation.aspx" />
+    <Content Include="viewallocation.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -343,6 +346,10 @@
     <Content Include="Bundle.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="adminpage.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>adminpage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="cloudy.Master.cs">
@@ -461,12 +468,29 @@
     <Compile Include="details.aspx.designer.cs">
       <DependentUpon>details.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm16.aspx.cs">
-      <DependentUpon>WebForm16.aspx</DependentUpon>
+    <Compile Include="serverallocation.aspx.cs">
+      <DependentUpon>serverallocation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm16.aspx.designer.cs">
-      <DependentUpon>WebForm16.aspx</DependentUpon>
+    <Compile Include="serverallocation.aspx.designer.cs">
+      <DependentUpon>serverallocation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminpage.aspx.designer.cs">
+      <DependentUpon>adminpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="clientallocation.aspx.cs">
+      <DependentUpon>clientallocation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="clientallocation.aspx.designer.cs">
+      <DependentUpon>clientallocation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewallocation.aspx.cs">
+      <DependentUpon>viewallocation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewallocation.aspx.designer.cs">
+      <DependentUpon>viewallocation.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />

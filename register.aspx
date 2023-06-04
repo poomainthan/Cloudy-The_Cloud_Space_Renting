@@ -62,7 +62,7 @@
 						
 					</div>
 					<div>
-						<span class="m_25">Password<label>*</label></span><asp:TextBox runat="server" ID="password" OnTextChanged="Text4_TextChanged"></asp:TextBox>
+						<span class="m_25">Password<label>*</label></span><asp:TextBox runat="server" ID="passd" OnTextChanged="Text4_TextChanged"></asp:TextBox>
 						
 					</div>
 					<div>

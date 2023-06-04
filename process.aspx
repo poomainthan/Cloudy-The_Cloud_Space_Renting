@@ -11,8 +11,7 @@
                 <div class="cssmenu">
                     <ul>
                         <li><a href="mailto:clodyspace12@gmail.com">info(at)cloudyspace.com</a></li>
-                        <li class="active"><a href="login.aspx">Log In</a></li>
-                        <li><a href="register.aspx">Register</a></li>
+                        
                     </ul>
                 </div>
                 <div class="clearfix"> </div>

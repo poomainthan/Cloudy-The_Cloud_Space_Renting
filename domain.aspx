@@ -11,8 +11,7 @@
 			<div class="cssmenu">
 					<ul>
 						<li><a href="mailto:clodyspace12@gmail.com">info(at)cloudyspace.com</a></li> 
-						<li class="active"><a href="login.aspx">Log In</a></li> 
-						<li><a href="register.aspx">Register</a></li>
+						
 					</ul>
 			</div>
 			<div class="clearfix"> </div>
@@ -50,28 +49,24 @@
 				<p>Give your details</p>	
 					<div>
 						<span class="m_25">Web Name<label>*</label></span>
-                        <asp:TextBox runat="server" ID="web_name" OnTextChanged="web_name_TextChanged1"></asp:TextBox>
+                        <asp:TextBox runat="server" ID="webname" OnTextChanged="web_name_TextChanged1" BorderColor="#0099FF"></asp:TextBox>
 					</div>
 					<div>
 						<span class="m_25">Web Tag<label>*</label></span>
-                        <asp:TextBox runat="server" ID="web_tag" OnTextChanged="web_tag_TextChanged1"></asp:TextBox>
+                        <asp:TextBox runat="server" ID="webtag" OnTextChanged="web_tag_TextChanged1" BorderColor="#0099FF"></asp:TextBox>
 							</div>
 					<div>
-						<span class="m_25">Company Name<label>*</label></span><asp:TextBox runat="server" ID="companyname" OnTextChanged="companyname_TextChanged1"></asp:TextBox>
+						<span class="m_25">Company Name<label>*</label></span><asp:TextBox runat="server" ID="companyname" OnTextChanged="companyname_TextChanged1" BorderColor="#0099FF"></asp:TextBox>
 						
 					</div>
 					<div>
 						<span class="m_25">Site size<label>*</label></span>
-                        <asp:TextBox runat="server" ID="sitesize" OnTextChanged="sitesize_TextChanged1"></asp:TextBox>
+                        <asp:TextBox runat="server" ID="sitesize" OnTextChanged="sitesize_TextChanged1" BorderColor="#0099FF"></asp:TextBox>
 					</div>
 					<br /><br />
-						  
-						  <div class="one-fifth column">
-                              <asp:Button ID="Button1" runat="server" Text="Create" OnClick="Button1_Click1" /> <br><br>
-
-							  <p class="active"><b><a href="domainmanage.aspx">DOMAINMANAGE </a></b></p>
-						  </div>	
+				    <div class="one-fifth column">
 			</div>
+			        <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="create" />
 			<div class="clearfix"> </div>
         </div>
 </div>

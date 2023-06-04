@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/cloudy.Master" AutoEventWireup="true" CodeBehind="faq.aspx.cs" Inherits="WebApplication_master_testing.WebForm6" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     	<div class="header">
 		<div class="container">
 			<div class="header_top">
@@ -11,8 +11,7 @@
 				<div class="cssmenu">
 					<ul>
 						<li><a href="mailto:clodyspace12@gmail.com">info(at)cloudyspace.com</a></li>
-						<li class="active"><a href="login.aspx">Log In</a></li>
-						<li><a href="register.aspx">Register</a></li>
+						
 					</ul>
 				</div>
 				<div class="clearfix"> </div>
@@ -145,10 +144,10 @@
 				<h4 class="tz-title-4 tzcolor-blue">
 					<p class="tzweight_Bold"><span class="m_1">Submit Your<br></span>Questions</p>
 				</h4>
-				<form>
+				<form id="form1" runat="server">
 					<div class="form_list1">
-						<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-						<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+						<asp:TextBox ID="Text1" runat="server"></asp:TextBox>
+						<asp:TextBox ID="Text" runat="server"></asp:TextBox>
 					</div>
 					<div class="form_list2">
 						<input type="text" class="text" value="Subject" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}">
@@ -166,22 +165,5 @@
 	</div>
 	<br /><br />
 	<div class="clearfix"></div>
-	<div class="domain">
-		<div class="container">
-			<form class="search-form domain-search">
-				<div class="two-fifth signup column first">
-					<img src="images/message.png" alt="" / width="50" height="50">
-					<h2><span class="m_1">Sign Up Your</span><br>Newsletter</h2>
-				</div>
-				<div class="three-fifth searchbar column first">
-					<input type="text" class="text" value="Enter your domain name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your domain name';}">
-				</div>
-				<div class="one-fifth col_2 ">
-					<br/>
-						<p class="active"><b><a href="domainmanage.aspx">MANAGEDOMAIN</a></b></p>
-				</div>
-				<div class="clearfix"> </div>
-			</form>
-		</div>
-	</div>
+
 </asp:Content>
