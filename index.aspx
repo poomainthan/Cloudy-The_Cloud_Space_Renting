@@ -189,6 +189,7 @@
 	</div>
 		
 	</form>
+	<p class="active"><a href="adminpage.aspx">ADMIN</a></p>
 		<script>
             $(function () {
                 SyntaxHighlighter.all();
