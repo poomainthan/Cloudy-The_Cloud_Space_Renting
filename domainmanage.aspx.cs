@@ -35,7 +35,7 @@ namespace WebApplication_master_testing
                 }
                 catch
                 {
-                    Response.Write("<script>alert(' not successfully')</script>");
+                    Response.Write("<script>alert('database error')</script>");
 
                 }
 

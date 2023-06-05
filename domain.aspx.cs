@@ -19,7 +19,7 @@ namespace WebApplication_master_testing
         DataSet ds;
         protected void Page_Load(object sender, EventArgs e)
         {
-            conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\db\cloud storing.mdf;Integrated Security=True;Connect Timeout=30");
+            conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\db\cloud storing.mdf"";Integrated Security=True;Connect Timeout=30");
             Response.Write("<script>alert('Domain')</script>");
             try
             {
@@ -44,7 +44,7 @@ namespace WebApplication_master_testing
             {
                 //insert//
                 conn.Open();
-                cmd = new SqlCommand("insert into domainregistration values('" + webname.Text + "','" + webtag.Text + "','"+companyname.Text+"','" + sitesize.Text +"')", conn);
+                cmd = new SqlCommand("insert into doreg values('" +webname.Text + "','" +webtag.Text+ "','"+companyname.Text+"','" +sitesize.Text+"')", conn);
                 if (cmd.ExecuteNonQuery() != 0)
                 {
                     Response.Write("<script>alert('Data inserted successfully')</script>");

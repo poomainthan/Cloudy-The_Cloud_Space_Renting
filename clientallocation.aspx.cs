@@ -25,7 +25,7 @@ namespace WebApplication_master_testing
             {
                 conn.Open();
 
-                cmd = new SqlCommand("select * from domainregistration", conn);
+                cmd = new SqlCommand("select * from doreg", conn);
                 SqlDataReader dr = cmd.ExecuteReader();
                 if (dr.HasRows)
                 {

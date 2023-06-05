@@ -31,9 +31,9 @@ namespace WebApplication_master_testing
         {
             try
             {
-                SqlConnection con = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = ""C:\db\cloud storing.mdf""; Integrated Security = True; Connect Timeout = 30");
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\db\cloud storing.mdf"";Integrated Security=True;Connect Timeout=30");
                 con.Open();
-                SqlCommand cmd = new SqlCommand("select  * from register where emailid='" + emailid.Text + "' and passd = '" + passd.Text + "'", con);
+                SqlCommand cmd = new SqlCommand("select  * from reglog where emailid='" + emailid.Text + "' and passd = '" + passd.Text + "'", con);
                 cmd.ExecuteNonQuery();
                 SqlDataAdapter sda = new SqlDataAdapter(cmd);
                 DataSet ds = new DataSet();

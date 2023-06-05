@@ -70,7 +70,7 @@ namespace WebApplication_master_testing
         {
             //insert//
             conn.Open();
-            cmd = new SqlCommand("insert into register values('" +fname.Text+ "','" +lname.Text+ "','" +emailid.Text+ "','" + username.Text+ "','" +passd.Text+ "','" +companyname.Text+ "')", conn);
+            cmd = new SqlCommand("insert into reglog values('" +fname.Text+ "','" +lname.Text+ "','" +emailid.Text+ "','" + username.Text+ "','" +passd.Text+ "','" +companyname.Text+ "')", conn);
             if (cmd.ExecuteNonQuery() != 0)
             {
                 Response.Write("<script>alert('Data inserted successfully')</script>");
