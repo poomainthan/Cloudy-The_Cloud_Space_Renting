@@ -1,6 +1,7 @@
 <h1>Its Developed by the Team of CLOUDY.</h1>
 <br>
-Team_Developers: https://github.com/Yuvaranipandi , https://github.com/NevethaV 
+<center>Team_Developers:</center>
+||  https://github.com/Yuvaranipandi  ||   https://github.com/NevethaV   ||
 <br>
 <br>
 <h2>
