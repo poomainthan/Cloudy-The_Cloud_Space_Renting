@@ -19,7 +19,10 @@ namespace WebApplication_master_testing
         DataSet ds;
         protected void Page_Load(object sender, EventArgs e)
         {
-            conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\db\cloud storing.mdf"";Integrated Security=True;Connect Timeout=30");
+            conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\db\cloud storing.mdf;Integrated Security=True;Connect Timeout=30");
+<<<<<<<<< Temporary merge branch 1
+            Response.Write("<script>alert('welcome')</script>");
+=========
             Response.Write("<script>alert('Domain')</script>");
             try
             {
